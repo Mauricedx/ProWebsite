@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Welkom</title>
+        <title>Vleugels Hogeschool</title>
     </head>
     <body>
         <header>
@@ -21,7 +21,6 @@
          *                 Felice Zirkzee, Robin Haan, Jurrian Tanke
          */
         
-        // this is a test
         ?>
         </div>
         <footer>
