@@ -9,8 +9,6 @@
             
         </header>
         <div id ="content">
-            
-            <img src="http://api.buienradar.nl/image/1.0/RadarMapNL?w=256&h=256" width="256" height="256" border="0"></img>
         <?php
         /*
          * Filename   :   index.php
