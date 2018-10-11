@@ -18,6 +18,8 @@
          * Programmers :   Maurice Hoekstra, Tim Groenewold, Kevin Trip, Onno Busscher,
          *                 Felice Zirkzee, Robin Haan, Jurrian Tanke
          */
+        
+        // this is a test
         ?>
         </div>
         <footer>
