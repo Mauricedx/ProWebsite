@@ -5,6 +5,10 @@
         <title>Welkom</title>
     </head>
     <body>
+        <header>
+            
+        </header>
+        <div id ="content">
         <?php
         /*
          * Filename   :   index.php
@@ -15,5 +19,9 @@
          *                 Felice Zirkzee, Robin Haan, Jurrian Tanke
          */
         ?>
+        </div>
+        <footer>
+            
+        </footer>
     </body>
 </html>
