@@ -29,8 +29,35 @@ header p{
 }
 
 #navbar{
-    height:50px;
+    height:65px;
     width: 60%;
     margin: auto;
     background-color:#B5D3D2;
+}   
+
+#navbar li{
+    margin: auto;
+    position: relative;
+    left: 8%;
+    list-style-type: none;
+    padding: 22px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.dropdownnav:hover .navddcontent{
+    float:left;
+    display: block;
+}
+.navddcontent{
+    display:none;
+    z-index: 1;
+}
+
+#planeimg{
+    width: 60%;
+    height: 305px;
+    margin: auto;
+    background-image: url("../Images/planeimg.png");
+    background-repeat: no-repeat;
 }
