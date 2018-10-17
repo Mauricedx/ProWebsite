@@ -42,22 +42,81 @@ header p{
     list-style-type: none;
     padding: 22px;
     font-size: 18px;
+    float:left;
     display: inline-block;
 }
 
-.dropdownnav:hover .navddcontent{
-    float:left;
-    display: block;
+#navbar a{
+    color: #4B766B;
+    text-decoration: none;
 }
+#navbar p{
+    color: #4B766B;
+}
+
 .navddcontent{
     display:none;
     z-index: 1;
 }
-
+.dropdownnav:hover .navddcontent{
+    padding:10px;
+    background-color:#8fbcbb;
+    float:left;
+    display: block;
+    line-height: 50px;
+    border-radius: 20px;
+}
 #planeimg{
     width: 60%;
     height: 305px;
     margin: auto;
     background-image: url("../Images/planeimg.png");
     background-repeat: no-repeat;
+}
+
+#content{
+    width: 60%;
+    height: 800px;
+    position: relative;
+    margin: auto;
+    background-color: white;
+}
+
+#content h3{
+    color: #4B766B;
+    font-family: "Garamond", "sans-serif";
+    font-size: 28px;
+    position:relative;
+    left:50px;
+    line-height: 140px;
+}
+
+#signupbtn{
+
+    height: 60px;
+    width: 320px;
+    position: relative;
+    left: 50px;
+    bottom:30px;    
+    background-color: #DF1C20;
+    border-radius: 10px;    
+}
+
+#signupbtn a{
+    position:relative;
+    top:8px;
+    padding-top:13px;
+    padding-bottom:13px;
+    padding-left: 20px;
+    padding-right:10px;
+    color: white;
+    text-decoration: none;
+    font-size:30px;
+    font-family:"calibri", "sans-serif";
+}
+#signupbtn:hover{  
+    background-color: #9f1416;
+ 
+#signupbtn a:hover{
+    color: #f2f2f2;
 }
