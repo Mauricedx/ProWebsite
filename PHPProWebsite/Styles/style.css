@@ -35,8 +35,10 @@ header p{
     background-color:#B5D3D2;
 }   
 
-#navbar li{
+#navbar ul{
     margin: auto;
+}
+#navbar li{    
     position: relative;
     left: 8%;
     list-style-type: none;
@@ -54,8 +56,37 @@ header p{
     color: #4B766B;
 }
 
+#navbaren{
+    height:65px;
+    width: 60%;
+    margin: auto;
+    background-color:#B5D3D2;
+}
+
+#navbaren ul{
+    margin: auto;
+}
+#navbaren li{    
+    position: relative;
+    left: 12%;
+    list-style-type: none;
+    padding: 22px;
+    font-size: 18px;
+    float:left;
+    display: inline-block;
+}
+
+#navbaren a{
+    color: #4B766B;
+    text-decoration: none;
+}
+#navbaren p{
+    color: #4B766B;
+}
+
 .navddcontent{
     display:none;
+    margin-right: -40px;
     z-index: 1;
 }
 .dropdownnav:hover .navddcontent{
@@ -66,6 +97,7 @@ header p{
     line-height: 50px;
     border-radius: 20px;
 }
+
 #planeimg{
     width: 60%;
     height: 305px;
