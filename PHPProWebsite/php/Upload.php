@@ -37,6 +37,7 @@
                 <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
                     <input name="userfile" type="file" />
+                    <input type="submit" value="Upload"/>
                 </form>
                 <?php
                 /*
@@ -47,6 +48,16 @@
                 * Programmers :  Maurice Hoekstra
                 */
                 
+                $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
+             
+                
+                echo '<p>';
+                if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+                    echo "File has been uploaded";
+                } else {
+                    echo "File failed to upload, is it valid?";
+                }
+                echo "</p>";
                 ?>
             </div>
         </div>
