@@ -62,8 +62,13 @@
             </div>
             <div id="photogallery">
                 <?php
-                $photodir = '../upphoto/';
-                    var_dump(scandir($photodir));
+                $photoDir = '../upphoto/';
+                $photoArray = scandir($photoDir);
+                $varPhotoDirCount = count($photoArray); 
+                for($count = 3; $count <= $varPhotoDirCount -1; $count++){
+                    echo '<img src="../upphoto/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/>'; 
+                }
+                
                 ?>
             </div>
         </div>
