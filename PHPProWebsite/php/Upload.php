@@ -43,7 +43,7 @@
                 /*
                 * Filename   :   Upload.php
                 * Assignment :   Professional Website Photo Uploader
-                * Created    :   11-10-2018
+                * Created    :   19-10-2018
                 * Description:   Professional Website Uploading function and display
                 * Programmers :  Maurice Hoekstra
                 */
