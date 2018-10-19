@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Vleugels Hogeschool</title>
-        <link rel="stylesheet" type="text/css" href="Styles/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
@@ -28,21 +28,10 @@
                 <li><p>Welkom bij Vleugels Hogeschool!</p></li>
                 <li><a href="html/Contact.html">Contact</a></li>
                 <li><a href="#">Inloggen</a></li>
-                <li><a href="php/Upload.php">Foto's</a></li>
+                <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
-        <div id="planeimg">    
-        </div>
         <div id ="content">
-            <br/>
-            <div id="langflagpush"> 
-            <a href="index_en.html"><img src="Images/engflag.png" alt="ENG" height="80" width="160"></a>
-            </div>
-            <h3>Welkom bij Vleugels Hogeschool!</h3>
-            <div id="signupbtn"><a href="https://student.sl-cloud.nl/"><b>Direct Inschrijven</b>      
-                </a>
-                <img src="Images/Arrow.png" alt="signuparrow" height="40" width="40" align="center"/>
-            </div>
         </div>
     </body>
 </html>
