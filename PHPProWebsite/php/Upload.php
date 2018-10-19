@@ -32,6 +32,23 @@
             </ul>
         </div>
         <div id ="content">
+            <div id="uploadform">
+                <h2>Upload jouw eigen foto!</h2>
+                <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
+                    <input name="userfile" type="file" />
+                </form>
+                <?php
+                /*
+                * Filename   :   Upload.php
+                * Assignment :   Professional Website Photo Uploader
+                * Created    :   11-10-2018
+                * Description:   Professional Website Uploading function and display
+                * Programmers :  Maurice Hoekstra
+                */
+                
+                ?>
+            </div>
         </div>
     </body>
 </html>
