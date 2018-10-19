@@ -35,9 +35,9 @@
             <div id="uploadform">
                 <h2>Upload jouw eigen foto!</h2>
                 <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
                     <input name="userfile" type="file" />
-                    <input type="submit" value="Upload"/>
+                    <input type="submit" name="submit" value="Upload"/>
                 </form>
                 <?php
                 /*
@@ -48,16 +48,18 @@
                 * Programmers :  Maurice Hoekstra
                 */
                 
-                $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
-             
+                if (isset($_POST["submit"])) {
+                    $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
                 
-                echo '<p>';
-                if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-                    echo "File has been uploaded";
-                } else {
-                    echo "File failed to upload, is it valid?";
+                
+                    echo '<p>';
+                    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+                        echo "File has been uploaded";
+                    } else {
+                        echo "File failed to upload, is it valid?";
+                    }
+                    echo "</p>";
                 }
-                echo "</p>";
                 ?>
             </div>
             <div id="photogallery">
@@ -67,8 +69,7 @@
                 $varPhotoDirCount = count($photoArray); 
                 for($count = 3; $count <= $varPhotoDirCount -1; $count++){
                     echo '<img src="../upphoto/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/>'; 
-                }
-                
+                } 
                 ?>
             </div>
         </div>
