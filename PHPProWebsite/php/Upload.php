@@ -60,6 +60,12 @@
                 echo "</p>";
                 ?>
             </div>
+            <div id="photogallery">
+                <?php
+                $photodir = '../upphoto/';
+                    var_dump(scandir($photodir));
+                ?>
+            </div>
         </div>
     </body>
 </html>
