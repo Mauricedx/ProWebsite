@@ -26,8 +26,17 @@
                 </li>
                 <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
                 <li><p>Welkom bij Vleugels Hogeschool!</p></li>
-                <li><a href="html/Contact.html">Contact</a></li>
-                <li><a href="#">Inloggen</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><div class="dropdownnav"><p>Inloggen</p>
+                        <div  class="navddcontent">
+                            <form action="index.html" method="POST">
+                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
+                                <input type="password" name="password" placeholder="Wachtwoord"><br>
+                                <input type="submit" name="submit" value="Inloggen">
+                            </form>
+                        </div>
+                    </div>
+                </li> 
                 <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>

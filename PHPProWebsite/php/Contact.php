@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </li> 
-                <li><a href="php/Upload.php">Foto's</a></li>
+                <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
         <div id ="content">
@@ -58,15 +58,23 @@
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                     <p>Naam*</p>
-                    <input type="text" name="appname" required/><br/>
+                    <input type="text" name="appname" required/>
                     <p>Geslacht</p>
                     <input type="radio" name="sex" value="male" checked>Man
                     <input type="radio" name="sex" value="female">Vrouw
                     <input type="radio" name="sex" value="anders">Anders
                     <p>E-mailadres*</p>
-                    <input type="text" name="email" required/><br/>
+                    <input type="text" name="email" required/>
+                    <p>???</p>
+                    <input type="radio" name="occupation" value="student" checked>Student
+                    <input type="radio" name="occupation" value="interested">Geïntresseerde
+                    <input type="radio" name="occupation" value="other">Anders
                     <p>Telefoonnummer</p>
-                    <input type="text" name="telnr"/><br/>
+                    <input type="text" name="telnr"/>
+                    <p>Studentnummer</p>
+                    <input type="text" name="studentnummer">
+                    <p>Opmerking</p>
+                    <textarea></textarea>
                 </form>
             </div>    
 
