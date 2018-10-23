@@ -170,6 +170,13 @@ header a{
 #BuiRaRRS{
     width:260px;
     height:400px;
-    position:relative;
-    float: right;
+    float:right;
+}
+
+#Contactform{
+    width: 800px;
+}
+#Contactform textarea{
+    resize: vertical;
+    width:400px;
 }

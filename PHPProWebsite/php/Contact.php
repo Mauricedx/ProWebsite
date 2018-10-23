@@ -26,8 +26,17 @@
                 </li>
                 <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
                 <li><p>Welkom bij Vleugels Hogeschool!</p></li>
-                <li><a href="php/Contact.php">Contact</a></li>
-                <li><a href="#">Inloggen</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><div class="dropdownnav"><p>Inloggen</p>
+                        <div  class="navddcontent">
+                            <form action="index.html" method="POST">
+                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
+                                <input type="password" name="password" placeholder="Wachtwoord"><br>
+                                <input type="submit" name="submit" value="Inloggen">
+                            </form>
+                        </div>
+                    </div>
+                </li> 
                 <li><a href="php/Upload.php">Foto's</a></li>
             </ul>
         </div>
@@ -46,6 +55,21 @@
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
             </div>
+            <div id="Contactform">
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+                    <p>Naam*</p>
+                    <input type="text" name="appname" required/><br/>
+                    <p>Geslacht</p>
+                    <input type="radio" name="sex" value="male" checked>Man
+                    <input type="radio" name="sex" value="female">Vrouw
+                    <input type="radio" name="sex" value="anders">Anders
+                    <p>E-mailadres*</p>
+                    <input type="text" name="email" required/><br/>
+                    <p>Telefoonnummer</p>
+                    <input type="text" name="telnr"/><br/>
+                </form>
+            </div>    
+
         </div>
     </body>
 </html>
