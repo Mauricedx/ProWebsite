@@ -33,6 +33,7 @@
         </div>
         <div id ="content">
             <div id="BuiRaRRS">
+                <h3>Actueel Weer</h3>
                 <?php
                 /*
                  * Filename   :   Contact.php
