@@ -27,7 +27,16 @@
                 <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
                 <li><p>Welcome to Vleugels University!</p></li>
                 <li><a href="html/Contact.html">Contact</a></li>
-                <li><a href="#">Log in</a></li>
+                <li><div class="dropdownnav"><p>Log in</p>
+                        <div  class="navddcontent">
+                            <form action="index.html" method="POST">
+                                <input type="text" name="user" placeholder="Username"><br>
+                                <input type="password" name="password" placeholder="Password"><br>
+                                <input type="submit" name="submit" value="Log in">
+                            </form>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Pictures</a></li>
             </ul>
         </div>
@@ -41,7 +50,7 @@
             <h3>Welcome to Vleugels University!</h3>
             <div id="signupbtn"><a href="https://student.sl-cloud.nl/"><b>Apply immediately</b>      
                 </a>
-                <img src="Images/Arrow.png" alt="signuparrow" height="40" width="40" align="center"/>
+                <img id="pijltje" src="Images/Arrow.png" alt="signuparrow" height="40" width="40" align="center"/>
             </div>
         </div>
     </body>
