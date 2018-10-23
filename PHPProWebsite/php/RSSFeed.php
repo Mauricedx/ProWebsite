@@ -2,7 +2,7 @@
 /*
  * Filename   :   RSSFeed.php
  * Assignment :   Professional Website RSS Feed
- * Created    :   11-10-2018
+ * Created    :   23-10-2018
  * Description:   Professional Website RSS Feed functions
  * Programmers :   Maurice Hoekstra
  */
