@@ -105,10 +105,12 @@ header a{
 /*END NAVBAR*/
 #planeimg{
     width: 60%;
-    height: 305px;
     margin: auto;
+    height: 35vh;
     background-image: url("../Images/planeimg.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 #content{
