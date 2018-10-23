@@ -113,7 +113,7 @@ header a{
 
 #content{
     width: 60%;
-    height: 800px;
+    height: 420px;
     position: relative;
     margin: auto;
     background-color: white;
@@ -125,7 +125,8 @@ header a{
     font-size: 28px;
     position:relative;
     left:50px;
-    line-height: 140px;
+    padding-top: 35px;
+    padding-bottom: 70px;
 }
 
 #signupbtn{
@@ -156,6 +157,9 @@ header a{
 }
 #signupbtn a:hover{
     color: #f2f2f2;
+}
+#pijltje {
+    padding-top :6px;
 }
 #langflagpush {
     padding-left: 50px;
