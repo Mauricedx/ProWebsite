@@ -39,7 +39,7 @@ header a{
     margin: auto;
     background-color:#B5D3D2;
 }   
-
+/*NAVBAR*/
 #navbar ul{
     margin: auto;
 }
@@ -97,12 +97,12 @@ header a{
 .dropdownnav:hover .navddcontent{
     padding:10px;
     background-color:#8fbcbb;
-    float:left;
     display: block;
     line-height: 50px;
     border-radius: 20px;
+    position: absolute;
 }
-
+/*END NAVBAR*/
 #planeimg{
     width: 60%;
     height: 305px;
