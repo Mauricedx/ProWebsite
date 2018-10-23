@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
