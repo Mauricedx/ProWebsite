@@ -153,7 +153,10 @@ header a{
 }
 #signupbtn:hover{  
     background-color: #9f1416;
- 
+}
 #signupbtn a:hover{
     color: #f2f2f2;
+}
+#langflagpush {
+    padding-left: 50px;
 }
