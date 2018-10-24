@@ -40,7 +40,6 @@ header a{
     margin: auto;
     background-color:#B5D3D2;
 }   
-
 #navbar ul{
     margin: auto;
 }
@@ -60,6 +59,7 @@ header a{
 }
 #navbar p{
     color: #4B766B;
+    cursor: default;
 }
 
 #navbaren{
@@ -88,6 +88,7 @@ header a{
 }
 #navbaren p{
     color: #4B766B;
+    cursor: default;
 }
 
 .navddcontent{
@@ -105,16 +106,36 @@ header a{
     position: absolute;
 }
 /*END NAVBAR*/
-#planeimg{
+#sliderParent {
     width: 60%;
-    margin: auto;
-    height: 35vh;
-    background-image: url("../Images/planeimg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
+    height: 300px;
+    position: relative;
+    left: 20%;
+    margin-bottom: 50px;
+}
+#slider {
+	overflow: hidden;
 }
 
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width: 300%;
+	position: relative;
+	animation: 15s slider infinite;
+}
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
 #content{
     width: 60%;
     height: 700px;
