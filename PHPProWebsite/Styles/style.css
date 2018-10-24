@@ -7,11 +7,10 @@ body{
     background-color: #EFEFEF;
 }
 header{
-    width: 60%;
+    width: 1080px;
     height: 160px;
     margin: auto;
     background-color: white;
-
 }
 header h1{
     text-align: center;
@@ -30,26 +29,22 @@ header p{
 
 header a{
     text-decoration: none;
-    width: 60%;
     height: 160px;
 }
+/*NAVBAR*/
 #navbar{
-    height:65px;
-    width: 60%;
+    width: 1080px;
     margin: auto;
     background-color:#B5D3D2;
+    text-align: center;
 }   
-/*NAVBAR*/
 #navbar ul{
     margin: auto;
 }
 #navbar li{    
-    position: relative;
-    left: 8%;
     list-style-type: none;
     padding: 22px;
     font-size: 18px;
-    float:left;
     display: inline-block;
 }
 
@@ -59,63 +54,86 @@ header a{
 }
 #navbar p{
     color: #4B766B;
+    cursor: default;
 }
-
-#navbaren{
-    height:65px;
-    width: 60%;
-    margin: auto;
-    background-color:#B5D3D2;
-}
-
-#navbaren ul{
-    margin: auto;
-}
-#navbaren li{    
-    position: relative;
-    left: 12%;
-    list-style-type: none;
-    padding: 22px;
-    font-size: 18px;
-    float:left;
-    display: inline-block;
-}
-
-#navbaren a{
-    color: #4B766B;
-    text-decoration: none;
-}
-#navbaren p{
-    color: #4B766B;
-}
-
 .navddcontent{
     display:none;
-    margin-right: -40px;
     z-index: 1;
 }
 .dropdownnav:hover .navddcontent{
     padding:10px;
+    width: 250px;
     background-color:#8fbcbb;
     display: block;
     line-height: 50px;
     border-radius: 20px;
     position: absolute;
+    text-align: left;
 }
 /*END NAVBAR*/
-#planeimg{
-    width: 60%;
+#sliderParent {
+    width: 1080px;
+    height: 300px;
     margin: auto;
-    height: 35vh;
-    background-image: url("../Images/planeimg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
+}
+#slider {
+    overflow: hidden;
 }
 
+@keyframes slider {
+    0% { left: 0; }
+    30% { left: 0; }
+    33% { left: -100%; }
+    63% { left: -100%; }
+    66% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: 0; }
+}
+#slider figure {
+    height:100%;
+    width: 300%;
+    position: relative;
+    animation: 15s slider infinite;
+    font-size: 0;
+}
+#slider figure img {
+    width: 33.333333333%;
+    height : 100%;
+    float: left;
+}
+
+#planeimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/planeimg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#helicopterimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/helicopter.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#instrumentimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/instrument.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#text{
+}
 #content{
-    width: 60%;
-    height: 420px;
+    width: 1080px;
+    height: 700px;
     position: relative;
     margin: auto;
     background-color: white;
@@ -253,16 +271,104 @@ hr {
     padding-left: 50px;
 }
 
+/* Contact page elements*/
 #BuiRaRRS{
     width:260px;
     height:400px;
+    position: relative;
+    right: 20px;
     float:right;
+    text-align: center;
+}
+
+#BuiRaRRS h3{
+    margin-left: -100px;
+    
+}
+
+#langflagpushcontact {
+    padding-left: 50px;
+    position: relative;
+    top: 460px;
+    left: 190px;
+    float: right;
 }
 
 #Contactform{
-    width: 800px;
+    width: 750px;
+    height: 670px;
+    line-height: 25px;
+    padding: 15px;
+    color: black;
+    background-color: #7bbab8;
+    font-family: "Garamond", "sans-serif";
+    font-size: 18px;
+}
+
+#Contactform h2{
+    text-align: center
 }
 #Contactform textarea{
     resize: vertical;
     width:400px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+#Contactform input[type=text]{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#Contactform input[type=submit]{
+    background-color: #B5D3D2;
+    padding: 4px;
+    border: 1px solid;
+}
+
+#Contactform input[type=submit]:active{
+    background-color: #8fbcbb;
+}
+/* Upload page elements*/
+#uploadform{
+    background-color: #7bbab8;
+    padding: 20px;
+    line-height: 35px;
+    font-family: "Garamond", "sans-serif";
+}
+
+#uploadform input[type=file]{
+    background-color: #B5D3D2;
+    padding: 4px;
+    border: 1px solid;
+}
+
+#uploadform input[type=submit]{
+    background-color: #B5D3D2;
+    padding: 7px;
+    border: 1px solid;
+}
+#uploadform input[type=submit]:active{
+    background-color: #8fbcbb;
+
+}
+
+#photogallery{
+    width: 100%;
+    height: 600px;
+    
+}
+.upimg{
+    margin-top: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+    background-color: #8fbcbb;
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+#langflagpushphoto{
+    float: right;
+    position: relative;
+    bottom: 110px;
+    right: 60px;
 }
