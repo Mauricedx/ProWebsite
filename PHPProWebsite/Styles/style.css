@@ -378,3 +378,29 @@ hr {
     bottom: 110px;
     right: 60px;
 }
+
+/*About page*/
+#aboutcont{
+    height:400px;
+    width: 700px;
+    text-align: justify;
+    color: #4B766B;
+    font-family: "Garamond", "sans-serif";
+    padding:30px;
+}
+#aboutcont h2{
+    font-size:32px;
+}
+#aboutcont p{
+    font-size:24px;
+}
+#logo{
+    position: relative;
+    left: 100px;
+    margin-bottom: 30px;
+}
+#langflagpushabout{
+    position: absolute;
+    left:850px;
+    bottom: 550px;
+}
