@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
+                <li><a href="https://student.sl-cloud.nl/">Inschrijven</a></li>
                 <li><a href="../index.html">Welkom bij Vleugels Hogeschool!</a></li>
                 <li><a href="Contact.php">Contact</a></li>
                 <li><div class="dropdownnav"><p>Inloggen</p>
