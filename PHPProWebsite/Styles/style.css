@@ -7,7 +7,7 @@ body{
     background-color: #EFEFEF;
 }
 header{
-    width: 60%;
+    width: 1080px;
     height: 160px;
     margin: auto;
     background-color: white;
@@ -29,12 +29,11 @@ header p{
 
 header a{
     text-decoration: none;
-    width: 60%;
     height: 160px;
 }
 /*NAVBAR*/
 #navbar{
-    width: 60%;
+    width: 1080px;
     margin: auto;
     background-color:#B5D3D2;
     text-align: center;
@@ -73,10 +72,9 @@ header a{
 }
 /*END NAVBAR*/
 #sliderParent {
-    width: 60%;
+    width: 1080px;
     height: 300px;
-    position: relative;
-    left: 20%;
+    margin: auto;
 }
 #slider {
     overflow: hidden;
@@ -134,7 +132,7 @@ header a{
 #text{
 }
 #content{
-    width: 60%;
+    width: 1080px;
     height: 700px;
     position: relative;
     margin: auto;
@@ -211,7 +209,7 @@ header a{
 }
 
 #Contactform{
-    width: 800px;
+    width: 750px;
     height: 670px;
     line-height: 25px;
     padding: 15px;
