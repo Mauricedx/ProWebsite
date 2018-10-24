@@ -14,13 +14,13 @@
         </header>
         <div id="navbar">
             <ul>
-                <li><a href="html/Informatie_en.html">About</a></li>
+                <li><a href="../html/Informatie_en.html">About</a></li>
                 <li><div class="dropdownnav"><p>Courses</p>
                         <div  class="navddcontent">
-                            <a href="html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
-                            <a href="html/Vliegtuigbouw_en.html">Airplane Construction</a><br/>
-                            <a href="html/Helikopterbouw_en.html">Helicopter Construction</a><br/>
-                            <a href="html/ElektronischeMuziek_en.html">Electronic Music</a><br/>
+                            <a href="../html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
+                            <a href="../html/Vliegtuigbouw_en.html">Airplane Construction</a><br/>
+                            <a href="../html/Helikopterbouw_en.html">Helicopter Construction</a><br/>
+                            <a href="../html/ElektronischeMuziek_en.html">Electronic Music</a><br/>
                         </div>
                     </div>
                 </li>
@@ -40,7 +40,6 @@
                 <li><a href="Upload_en.php">Pictures</a></li>
             </ul>
         </div>
-
         <div id ="content">
             
             <div id="uploadform">
