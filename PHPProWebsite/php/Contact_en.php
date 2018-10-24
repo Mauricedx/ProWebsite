@@ -25,7 +25,7 @@
                     </div>
                 </li>
                 <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                <li><p>Welcome to Vleugels University!</p></li>
+                <li><a href="../index_en.html">Welcome to Vleugels University!</a></li>
                 <li><a href="Contact_en.php">Contact</a></li>
                 <li><div class="dropdownnav"><p>Log in</p>
                         <div  class="navddcontent">
@@ -57,7 +57,7 @@
                 ?>
             </div>
             <div id="langflagpushcontact"> 
-                <a href="Upload_en.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
+                <a href="Contact.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
