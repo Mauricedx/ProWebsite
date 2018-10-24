@@ -115,7 +115,7 @@ header a{
 
 #content{
     width: 60%;
-    height: 420px;
+    height: 700px;
     position: relative;
     margin: auto;
     background-color: white;
@@ -167,16 +167,60 @@ header a{
     padding-left: 50px;
 }
 
+/* Contact page elements*/
 #BuiRaRRS{
     width:260px;
     height:400px;
+    position: relative;
+    right: 20px;
     float:right;
+    text-align: center;
+}
+
+#BuiRaRRS h3{
+    margin-left: -100px;
+    
+}
+
+#langflagpushcontact {
+    padding-left: 50px;
+    position: relative;
+    top: 460px;
+    left: 190px;
+    float: right;
 }
 
 #Contactform{
     width: 800px;
+    height: 670px;
+    line-height: 25px;
+    padding: 15px;
+    color: black;
+    background-color: #7bbab8;
+    font-family: "Garamond", "sans-serif";
+    font-size: 18px;
+}
+
+#Contactform h2{
+    text-align: center
 }
 #Contactform textarea{
     resize: vertical;
     width:400px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+#Contactform input[type=text]{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#Contactform input[type=submit]{
+    background-color: #B5D3D2;
+    padding: 4px;
+    border: 1px solid;
+}
+
+#Contactform input[type=submit]:active{
+    background-color: #8fbcbb;
 }
