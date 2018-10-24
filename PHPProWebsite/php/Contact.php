@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
@@ -26,13 +26,26 @@
                 </li>
                 <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
                 <li><p>Welkom bij Vleugels Hogeschool!</p></li>
-                <li><a href="php/Contact.php">Contact</a></li>
-                <li><a href="#">Inloggen</a></li>
-                <li><a href="php/Upload.php">Foto's</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><div class="dropdownnav"><p>Inloggen</p>
+                        <div  class="navddcontent">
+                            <form action="index.html" method="POST">
+                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
+                                <input type="password" name="password" placeholder="Wachtwoord"><br>
+                                <input type="submit" name="submit" value="Inloggen">
+                            </form>
+                        </div>
+                    </div>
+                </li> 
+                <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
         <div id ="content">
+            <div id="langflagpush"> 
+                <a href="Contact_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
+            </div>
             <div id="BuiRaRRS">
+                <h3>Actueel Weer</h3>
                 <?php
                 /*
                  * Filename   :   Contact.php
@@ -45,6 +58,39 @@
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
             </div>
+            <div id="Contactform">
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+                    <h2>Contactformulier</h2>
+                    <p>* verplichte velden</p>
+                    <p>Naam*</p>
+                    <input type="text" name="appname" required/>
+                    <p>Geslacht</p>
+                    <input type="radio" name="sex" value="male" checked>Man
+                    <input type="radio" name="sex" value="female"> Vrouw
+                    <input type="radio" name="sex" value="other"> Anders
+                    <p>E-mailadres*</p>
+                    <input type="text" name="email" required/>
+                    <p>Professie</p>
+                    <input type="radio" name="occupation" value="student" checked> Student
+                    <input type="radio" name="occupation" value="interested"> Geïntresseerde
+                    <input type="radio" name="occupation" value="teacher"> Docent
+                    <input type="radio" name="occupation" value="other"> Anders
+                    <p>Studentnummer</p>
+                    <input type="text" name="studentnummer">
+                    <p>Telefoonnummer</p>
+                    <input type="text" name="telnr"/>
+                    <p>Plaats</p>
+                    <input type="text" name="place"/>
+                    <p>Postcode</p>
+                    <input type="text" name="zipcode"/>
+                    <p>Huisnummer</p>
+                    <input type="text" name="housenumber"/>
+                    <p>Opmerking</p>
+                    <textarea></textarea><br/>
+                    <input type="submit" name="submit" value="Opsturen"/>
+                </form>
+            </div>    
+
         </div>
     </body>
 </html>
