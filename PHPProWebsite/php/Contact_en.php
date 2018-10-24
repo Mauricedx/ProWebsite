@@ -11,10 +11,10 @@
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
             </a>
-        </header>>
+        </header>
         <div id="navbaren">
             <ul>
-                <li><a href="html/Informatie.html">About</a></li>
+                <li><a href="html/Informatie_en.html">About</a></li>
                 <li><div class="dropdownnav"><p>Courses</p>
                         <div  class="navddcontent">
                             <a href="html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
@@ -26,10 +26,10 @@
                 </li>
                 <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
                 <li><p>Welcome to Vleugels University!</p></li>
-                <li><a href="html/Contact.html">Contact</a></li>
+                <li><a href="Contact_en.php">Contact</a></li>
                 <li><div class="dropdownnav"><p>Log in</p>
                         <div  class="navddcontent">
-                            <form action="index.html" method="POST">
+                            <form action="Contact_en.php" method="POST">
                                 <input type="text" name="user" placeholder="Username"><br>
                                 <input type="password" name="password" placeholder="Password"><br>
                                 <input type="submit" name="submit" value="Log in">
@@ -37,13 +37,11 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Pictures</a></li>
+                <li><a href="Upload_en.php">Pictures</a></li>
             </ul>
         </div>
         <div id ="content">
-            <div id="langflagpush"> 
-                <a href="Contact.php"><img src="../Images/nlflag.png" alt="ENG" height="80" width="160"></a>
-            </div>
+            
             <div id="BuiRaRRS">
                 <h3>Actual Weather of the Netherlands</h3>
                 <?php
@@ -58,9 +56,13 @@
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
             </div>
+            <div id="langflagpushcontact"> 
+                <a href="Upload_en.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
+            </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                     <h2>Contactform</h2>
+                    <br/>
                     <p>* required fields</p>
                     <p>Name*</p>
                     <input type="text" name="appname" required/>
@@ -89,7 +91,8 @@
                     <textarea></textarea><br/>
                     <input type="submit" name="submit" value="Send"/>
                 </form>
-            </div>    
+            </div>
+            
 
         </div>
     </body>
