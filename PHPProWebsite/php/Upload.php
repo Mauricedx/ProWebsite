@@ -68,6 +68,10 @@
                         echo "File failed to upload, is it valid?";
                     }
                     echo "</p>";
+                
+                }
+                else{
+                    echo '<br/>';
                 }
                 ?>
             </div>
