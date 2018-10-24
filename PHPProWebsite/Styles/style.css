@@ -35,7 +35,6 @@ header a{
 }
 /*NAVBAR*/
 #navbar{
-    height:65px;
     width: 60%;
     margin: auto;
     background-color:#B5D3D2;
@@ -49,7 +48,6 @@ header a{
     list-style-type: none;
     padding: 22px;
     font-size: 18px;
-    float:left;
     display: inline-block;
 }
 
@@ -111,30 +109,61 @@ header a{
     height: 300px;
     position: relative;
     left: 20%;
-    margin-bottom: 50px;
 }
 #slider {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 @keyframes slider {
-	0% { left: 0; }
-	30% { left: 0; }
-	33% { left: -100%; }
-	63% { left: -100%; }
-	66% { left: -200%; }
-	95% { left: -200%; }
-	100% { left: 0; }
+    0% { left: 0; }
+    30% { left: 0; }
+    33% { left: -100%; }
+    63% { left: -100%; }
+    66% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: 0; }
 }
 #slider figure {
-	width: 300%;
-	position: relative;
-	animation: 15s slider infinite;
+    height:100%;
+    width: 300%;
+    position: relative;
+    animation: 15s slider infinite;
+    font-size: 0;
 }
 #slider figure img {
-	width: 33.333333333%;
-	height : 100%;
-	float: left;
+    width: 33.333333333%;
+    height : 100%;
+    float: left;
+}
+
+#planeimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/planeimg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#helicopterimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/helicopter.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#instrumentimg{
+    height: 300px;
+    width: 33.333333333%;
+    background-image: url('../Images/instrument.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+#text{
 }
 #content{
     width: 60%;
