@@ -14,7 +14,7 @@
         </header>
         <div id="navbaren">
             <ul>
-                <li><a href="html/Informatie.html">About</a></li>
+                <li><a href="html/Informatie_en.html">About</a></li>
                 <li><div class="dropdownnav"><p>Courses</p>
                         <div  class="navddcontent">
                             <a href="html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Pictures</a></li>
+                <li><a href="Upload_en.php">Pictures</a></li>
             </ul>
         </div>
         <div id ="content">
@@ -57,7 +57,7 @@
                 ?>
             </div>
             <div id="langflagpushcontact"> 
-                <a href="Contact_en.php"><img src="../Images/nlflag.png" alt="ENG" height="80" width="160"></a>
+                <a href="Upload_en.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">

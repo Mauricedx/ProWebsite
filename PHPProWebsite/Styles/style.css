@@ -230,7 +230,7 @@ header a{
 #uploadform{
     background-color: #7bbab8;
     padding: 20px;
-    
+    line-height: 35px;
     font-family: "Garamond", "sans-serif";
 }
 
@@ -263,4 +263,11 @@ header a{
     background-color: #8fbcbb;
     border: 2px solid;
     border-radius: 2px;
+}
+
+#langflagpushphoto{
+    float: right;
+    position: relative;
+    bottom: 110px;
+    right: 60px;
 }

@@ -2,47 +2,49 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Vleugels Hogeschool</title>
+        <title>Vleugels University</title>
         <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
     </head>
     <body>
         <header>
-            <a href="../index.html">
-            <h1>Vleugels Hogeschool</h1>
-            <p>- Muziek en vliegtuigbouw -</p>
+            <a href="../index_en.html">
+            <h1>Vleugels University</h1>
+            <p>- Music and aerospace construction -</p>
             </a>
         </header>
-        <div id="navbar">
+        <div id="navbaren">
             <ul>
-                <li><a href="html/Informatie.html">Over</a></li>
-                <li><div class="dropdownnav"><p>Opleidingen</p>
+                <li><a href="html/Informatie_en.html">About</a></li>
+                <li><div class="dropdownnav"><p>Courses</p>
                         <div  class="navddcontent">
-                            <a href="html/KlassiekeMuziekInstrumenten.html">Klassieke Intrumentenbouw</a><br/>
-                            <a href="html/Vliegtuigbouw.html">Vliegtuigbouw</a><br/>
-                            <a href="html/Helikopterbouw.html">Helikopterbouw</a><br/>
-                            <a href="html/ElektronischeMuziek.html">Electronische Muziek</a><br/>
+                            <a href="html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
+                            <a href="html/Vliegtuigbouw_en.html">Airplane Construction</a><br/>
+                            <a href="html/Helikopterbouw_en.html">Helicopter Construction</a><br/>
+                            <a href="html/ElektronischeMuziek_en.html">Electronic Music</a><br/>
                         </div>
                     </div>
                 </li>
-                <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
-                <li><p>Welkom bij Vleugels Hogeschool!</p></li>
-                <li><a href="Contact.php">Contact</a></li>
-                <li><div class="dropdownnav"><p>Inloggen</p>
+                <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
+                <li><p>Welcome to Vleugels University!</p></li>
+                <li><a href="Contact_en.php">Contact</a></li>
+                <li><div class="dropdownnav"><p>Log in</p>
                         <div  class="navddcontent">
-                            <form action="index.html" method="POST">
-                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
-                                <input type="password" name="password" placeholder="Wachtwoord"><br>
-                                <input type="submit" name="submit" value="Inloggen">
+                            <form action="Contact_en.php" method="POST">
+                                <input type="text" name="user" placeholder="Username"><br>
+                                <input type="password" name="password" placeholder="Password"><br>
+                                <input type="submit" name="submit" value="Log in">
                             </form>
                         </div>
                     </div>
-                </li> 
-                <li><a href="Upload.php">Foto's</a></li>
+                </li>
+                <li><a href="Upload_en.php">Pictures</a></li>
             </ul>
         </div>
+
         <div id ="content">
+            
             <div id="uploadform">
-                <h2>Upload jouw eigen foto!</h2>
+                <h2>Upload your own photo!</h2>
                 <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
                     <input name="userfile" type="file" />
@@ -74,9 +76,10 @@
                     echo '<br/>';
                 }
                 ?>
+            
             </div>
             <div id="langflagpushphoto"> 
-                <a href="Upload_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
+                <a href="Upload.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
             </div>
             <div id="photogallery">
                 <?php
