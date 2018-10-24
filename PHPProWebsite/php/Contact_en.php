@@ -57,7 +57,7 @@
                 ?>
             </div>
             <div id="langflagpushcontact"> 
-                <a href="Contact.php"><img src="../Images/nlflag.png" alt="ENG" height="80" width="160"></a>
+                <a href="Contact_en.php"><img src="../Images/nlflag.png" alt="ENG" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
