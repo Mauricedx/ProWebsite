@@ -11,7 +11,6 @@ header{
     height: 160px;
     margin: auto;
     background-color: white;
-
 }
 header h1{
     text-align: center;
@@ -38,13 +37,12 @@ header a{
     width: 60%;
     margin: auto;
     background-color:#B5D3D2;
+    text-align: center;
 }   
 #navbar ul{
     margin: auto;
 }
 #navbar li{    
-    position: relative;
-    left: 8%;
     list-style-type: none;
     padding: 22px;
     font-size: 18px;
@@ -65,14 +63,13 @@ header a{
     width: 60%;
     margin: auto;
     background-color:#B5D3D2;
+    text-align: center;
 }
 
 #navbaren ul{
     margin: auto;
 }
 #navbaren li{    
-    position: relative;
-    left: 12%;
     list-style-type: none;
     padding: 22px;
     font-size: 18px;
