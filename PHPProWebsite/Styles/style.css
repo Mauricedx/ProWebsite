@@ -96,6 +96,7 @@ header a{
 }
 .dropdownnav:hover .navddcontent{
     padding:10px;
+    width: 250px;
     background-color:#8fbcbb;
     display: block;
     line-height: 50px;
@@ -223,4 +224,9 @@ header a{
 
 #Contactform input[type=submit]:active{
     background-color: #8fbcbb;
+}
+/* Upload page elements*/
+.upimg{
+    margin: 5px;
+    border: 1px solid
 }
