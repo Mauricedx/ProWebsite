@@ -12,7 +12,7 @@
             <p>- Music and aerospace construction -</p>
             </a>
         </header>
-        <div id="navbaren">
+        <div id="navbar">
             <ul>
                 <li><a href="html/Informatie_en.html">About</a></li>
                 <li><div class="dropdownnav"><p>Courses</p>

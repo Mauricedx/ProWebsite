@@ -57,38 +57,8 @@ header a{
     color: #4B766B;
     cursor: default;
 }
-
-#navbaren{
-    height:65px;
-    width: 60%;
-    margin: auto;
-    background-color:#B5D3D2;
-    text-align: center;
-}
-
-#navbaren ul{
-    margin: auto;
-}
-#navbaren li{    
-    list-style-type: none;
-    padding: 22px;
-    font-size: 18px;
-    float:left;
-    display: inline-block;
-}
-
-#navbaren a{
-    color: #4B766B;
-    text-decoration: none;
-}
-#navbaren p{
-    color: #4B766B;
-    cursor: default;
-}
-
 .navddcontent{
     display:none;
-    margin-right: -40px;
     z-index: 1;
 }
 .dropdownnav:hover .navddcontent{
@@ -99,6 +69,7 @@ header a{
     line-height: 50px;
     border-radius: 20px;
     position: absolute;
+    text-align: left;
 }
 /*END NAVBAR*/
 #sliderParent {
