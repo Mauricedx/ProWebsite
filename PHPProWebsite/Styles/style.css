@@ -129,8 +129,6 @@ header a{
     background-size: cover;
     display: inline-block;
 }
-#text{
-}
 #content{
     width: 1080px;
     height: 700px;
@@ -144,6 +142,7 @@ header a{
     margin: auto;
     background-color: #7bbab8;
 }
+
 #introductieopleiding{
 	width: 462px;
 	height: 370px;
@@ -270,9 +269,15 @@ hr {
     position:relative;
     left:50px;
     padding-top: 35px;
-    padding-bottom: 70px;
 }
-
+#indextext p{
+    width: 800px;
+    color: #4B766B;
+    padding: 50px;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
 #signupbtn{
 
     height: 60px;
