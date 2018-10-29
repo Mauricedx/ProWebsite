@@ -262,7 +262,7 @@ hr {
 	padding-left:30px;
 	padding-top:50px;
 }
-#content h3{
+#content h2{
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
     font-size: 28px;
@@ -335,6 +335,42 @@ hr {
     top: 460px;
     left: 190px;
     float: right;
+}
+#contentHeli {
+    
+}
+#contentHeliImg {
+    
+}
+#contentHeliText {
+    
+}
+#contentEmuz {
+    
+}
+#contentEmuzImg {
+    
+}
+#contentEmuzText {
+    
+}
+#contentVlieg {
+    
+}
+#contentVliegImg {
+    
+}
+#contentVliegText {
+    
+}
+#contentCmuz {
+    
+}
+#contentCmuzImg {
+    
+}
+#contentCmuzText {
+   
 }
 
 #Contactform{
