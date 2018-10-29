@@ -43,11 +43,12 @@
         <div id ="content">
             <div id="uploadform">
                 <h2>Upload jouw eigen foto!</h2>
-                <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
+                <form enctype="multipart/form-data" action="photocheck.php" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
                     <input name="userfile" type="file" />
                     <input type="submit" name="submit" value="Upload"/>
                 </form>
+                <a href="photocheck.php">Photo check</a> 
                 <?php
                 /*
                 * Filename   :   Upload.php
@@ -63,9 +64,9 @@
                 
                     echo '<p>';
                     if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-                        echo "File has been uploaded";
+                        echo "Bestand is geüpload en wacht op validering";
                     } else {
-                        echo "File failed to upload, is it valid?";
+                        echo "Bestand is niet geüpload, is het een foto?";
                     }
                     echo "</p>";
                 

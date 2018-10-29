@@ -2,4 +2,5 @@
 /nbproject/private/
 /PHPProWebsite/upphoto/*
 !/PHPProWebsite/upphoto/.gitkeep
-PHPProWebsite/Styles/style.css
+/PHPProWebsite/upphoto/*
+!/PHPProWebsite/upphoto/.gitkeep
