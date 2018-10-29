@@ -32,15 +32,42 @@
                 $photoArray = scandir($photoDir);
                 $varPhotoDirCount = count($photoArray); 
                 for($count = 3; $count <= $varPhotoDirCount -1; $count++){
-                    echo '<div class="photocheckform">';
-                    echo '<form action="' . htmlentities($_SERVER['PHP_SELF']). '" method=POST>';
+                    //Echo to be approved photos in a form with a checkbox, depending on which submit button, the checked photos will be approved or deleted
+                    echo '<div class="photocheckform"><form action="' . htmlentities($_SERVER['PHP_SELF']). '" method=POST>';
                     echo '<img src="../upphoto/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/></br>'; 
-                    echo '<input type= submit name = approved value = "Goedkeuren">';
-                    echo '<input type= submit name = delete value = "Delete">';
-                    echo '</form>';
-                    echo '</div>';
+                    echo '<input type = checkbox name= photoselect[] value = "../upphoto/' . $photoArray[$count] . '"/>';
+                    
+                    
                 }
-                
+                echo '<input type= submit name = approved value = "Goedkeuren">';
+                echo '<input type= submit name = delete value = "Delete">';
+                echo '</form></div>';
+                //If submit button approve is pressed, and it's checkbox array is not empty,move all selected photos to approved photo folder
+                if (isset($_POST["approved"])) {
+                    if ($_POST['photoselect'] == NULL){
+                        
+                    }
+                    else{
+                        foreach($_POST['photoselect'] as $photo){
+                            $newdir = '../upphotoapproved' . substr($photo, 10);
+                            rename($photo, $newdir);
+                        }
+                    }
+                }
+                //If submit button delete is pressed, and the checkbox array is not empty, delete all selected photos
+                elseif (isset($_POST["delete"])) {
+                    if ($_POST['photoselect'] == NULL){
+                        
+                    }
+                    else{
+                        foreach($_POST['photoselect'] as $photo){
+                            unlink($photo);
+                        }
+                    }
+                }
+                else{
+                    
+                }
                 ?>
             </div>
         </div>

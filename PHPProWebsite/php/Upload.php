@@ -61,14 +61,11 @@
             </div>
                 <h2>Upload jouw eigen foto!</h2>
                 
-                <form enctype="multipart/form-data" action="photocheck.php" method="POST">
+                <form enctype="multipart/form-data" action="<?php htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
                     <input name="userfile" type="file" />
                     <input type="submit" name="submit" value="Upload"/>
                 </form>
-                <div class="dropdownnav"><p>Check fotos</p>
-                </div>
-                <a href="photocheck.php">Photo check</a> 
                 <?php
                 //Check whether or not the file is uploaded, and move it to the uploaded file folder for checking
                 if (isset($_POST["submit"])) {
@@ -99,7 +96,7 @@
                 $photoArray = scandir($photoDir);
                 $varPhotoDirCount = count($photoArray); 
                 for($count = 3; $count <= $varPhotoDirCount -1; $count++){
-                    echo '<img class="upimg" src="../upphoto/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/>'; 
+                    echo '<img class="upimg" src="../upphotoapproved/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/>'; 
                 } 
                 ?>
             </div>
