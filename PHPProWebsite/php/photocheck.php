@@ -49,10 +49,6 @@
                 }
                 ?>
             </div>
-            <div id="langflagpushphoto"> 
-                <a href="Upload_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
-            </div>
-            
         </div>
     </body>
 </html>

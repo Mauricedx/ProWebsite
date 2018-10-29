@@ -27,36 +27,49 @@
                 <li><a href="https://student.sl-cloud.nl/">Inschriven</a></li>
                 <li><a href="../index.html">Welkom bij Vleugels Hogeschool!</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><div class="dropdownnav"><p>Inloggen</p>
-                        <div  class="navddcontent">
-                            <form action="index.html" method="POST">
-                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
-                                <input type="password" name="password" placeholder="Wachtwoord"><br>
-                                <input type="submit" name="submit" value="Inloggen">
-                            </form>
-                        </div>
-                    </div>
-                </li> 
+
                 <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
         <div id ="content">
             <div id="uploadform">
-                <h2>Upload jouw eigen foto!</h2>
-                <form enctype="multipart/form-data" action="photocheck.php" method="POST">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
-                    <input name="userfile" type="file" />
-                    <input type="submit" name="submit" value="Upload"/>
-                </form>
-                <a href="photocheck.php">Photo check</a> 
+            <div class="dropdownnav"><p>Check photos</p>
+                <div  class="navddcontent">
+                    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
+                        <input type="password" name="password" placeholder="Wachtwoord"><br>
+                        <input type="submit" name="inlogsubmit" value="Inloggen">
+                    </form>
+                </div>
                 <?php
                 /*
                 * Filename   :   Upload.php
                 * Assignment :   Professional Website Photo Uploader
                 * Created    :   19-10-2018
                 * Description:   Professional Website Uploading function and display
-                * Programmers :  Maurice Hoekstra
+                * Programmer :  Maurice Hoekstra
                 */
+                if (isset($_POST["inlogsubmit"])){
+                    if ($_POST["password"] === "wachtwoord"){
+                        header('Location: photocheck.php');
+                    }
+                    else{
+                        echo "<p>Onjuist wachtwoord</p>";
+                    }
+                }
+                
+                ?>
+            </div>
+                <h2>Upload jouw eigen foto!</h2>
+                
+                <form enctype="multipart/form-data" action="photocheck.php" method="POST">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
+                    <input name="userfile" type="file" />
+                    <input type="submit" name="submit" value="Upload"/>
+                </form>
+                <div class="dropdownnav"><p>Check fotos</p>
+                </div>
+                <a href="photocheck.php">Photo check</a> 
+                <?php
                 
                 if (isset($_POST["submit"])) {
                     $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
@@ -81,7 +94,7 @@
             </div>
             <div id="photogallery">
                 <?php
-                $photoDir = '../upphoto/';
+                $photoDir = '../upphotoapproved/';
                 $photoArray = scandir($photoDir);
                 $varPhotoDirCount = count($photoArray); 
                 for($count = 3; $count <= $varPhotoDirCount -1; $count++){
