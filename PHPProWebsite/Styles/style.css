@@ -451,7 +451,9 @@ hr {
     bottom: 110px;
     right: 60px;
 }
-
+.photocheckform{
+    display: inline-block;
+}
 /*About page*/
 #aboutcont{
     height:400px;

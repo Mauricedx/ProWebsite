@@ -48,6 +48,7 @@
                 * Description:   Professional Website Uploading function and display
                 * Programmer :  Maurice Hoekstra
                 */
+                //Check password on the inlog screen, if it matches, send user to photo checking page
                 if (isset($_POST["inlogsubmit"])){
                     if ($_POST["password"] === "wachtwoord"){
                         header('Location: photocheck.php');
@@ -56,7 +57,6 @@
                         echo "<p>Onjuist wachtwoord</p>";
                     }
                 }
-                
                 ?>
             </div>
                 <h2>Upload jouw eigen foto!</h2>
@@ -70,7 +70,7 @@
                 </div>
                 <a href="photocheck.php">Photo check</a> 
                 <?php
-                
+                //Check whether or not the file is uploaded, and move it to the uploaded file folder for checking
                 if (isset($_POST["submit"])) {
                     $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
                 
@@ -94,6 +94,7 @@
             </div>
             <div id="photogallery">
                 <?php
+                //For each photo in the approved photo folder, create a html img element with a class
                 $photoDir = '../upphotoapproved/';
                 $photoArray = scandir($photoDir);
                 $varPhotoDirCount = count($photoArray); 

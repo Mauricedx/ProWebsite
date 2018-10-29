@@ -16,37 +16,31 @@
             <a href="Upload.php">Terug</a>
         </div>
         <div id ="content">
-            <div id="uploadform">
-                <form enctype="multipart/form-data" action="photocheck.php" method="POST">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
-                    <input name="userfile" type="file" />
-                    <input type="submit" name="submit" value="Upload"/>
-                </form>
+            <div id="photogallery">
                 <?php
                 /*
-                * Filename   :   Upload.php
-                * Assignment :   Professional Website Photo Uploader
-                * Created    :   19-10-2018
-                * Description:   Professional Website Uploading function and display
-                * Programmers :  Maurice Hoekstra
+                * Filename   :   photocheck.php
+                * Assignment :   Professional Website Photo Checker
+                * Created    :   29-10-2018
+                * Description:   Professional Website Photo checking and approving/deleting
+                * Programmer :   Maurice Hoekstra
+                * 
+                * For each unapproved photo, create a form to approve and move the image to the approved image folder.
+                * If it is not approved, delete it.
                 */
-                
-                if (isset($_POST["submit"])) {
-                    $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
-                
-                
-                    echo '<p>';
-                    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-                        echo "File has been uploaded";
-                    } else {
-                        echo "File failed to upload, is it valid?";
-                    }
-                    echo "</p>";
-                
+                $photoDir = '../upphoto/';
+                $photoArray = scandir($photoDir);
+                $varPhotoDirCount = count($photoArray); 
+                for($count = 3; $count <= $varPhotoDirCount -1; $count++){
+                    echo '<div class="photocheckform">';
+                    echo '<form action="' . htmlentities($_SERVER['PHP_SELF']). '" method=POST>';
+                    echo '<img src="../upphoto/'.  $photoArray[$count] . '" alt="UploadedPhoto" height="200" width="200"/></br>'; 
+                    echo '<input type= submit name = approved value = "Goedkeuren">';
+                    echo '<input type= submit name = delete value = "Delete">';
+                    echo '</form>';
+                    echo '</div>';
                 }
-                else{
-                    echo '<br/>';
-                }
+                
                 ?>
             </div>
         </div>
