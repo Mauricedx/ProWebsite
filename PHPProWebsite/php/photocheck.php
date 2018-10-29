@@ -44,10 +44,7 @@
                 echo '</form></div>';
                 //If submit button approve is pressed, and it's checkbox array is not empty,move all selected photos to approved photo folder
                 if (isset($_POST["approved"])) {
-                    if ($_POST['photoselect'] == NULL){
-                        
-                    }
-                    else{
+                    if (isset($_POST['photoselect'])){
                         foreach($_POST['photoselect'] as $photo){
                             $newdir = '../upphotoapproved' . substr($photo, 10);
                             rename($photo, $newdir);
@@ -56,13 +53,10 @@
                 }
                 //If submit button delete is pressed, and the checkbox array is not empty, delete all selected photos
                 elseif (isset($_POST["delete"])) {
-                    if ($_POST['photoselect'] == NULL){
-                        
-                    }
-                    else{
-                        foreach($_POST['photoselect'] as $photo){
+                    if (isset($_POST['photoselect'])){
+                       foreach($_POST['photoselect'] as $photo){
                             unlink($photo);
-                        }
+                        } 
                     }
                 }
                 else{
