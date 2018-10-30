@@ -451,7 +451,22 @@ hr {
     bottom: 110px;
     right: 60px;
 }
-.photocheckform{
+
+#photocheckform input[type=submit]{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    left: 450px;
+}
+#photocheckform input[name=delete]{
+    background-color: red
+}
+#photocheckform input[name=approve]{
+    background-color: green;
+    color: white;
+}
+.photostobejudged{
     display: inline-block;
 }
 /*About page*/
