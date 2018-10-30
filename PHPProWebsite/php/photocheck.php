@@ -51,6 +51,7 @@
                             rename($oldDir, $newDir);
                             
                         }
+                        
                     }
                 }
                 //If submit button delete is pressed, and the checkbox array is not empty, delete all selected photos
