@@ -49,6 +49,7 @@
                         foreach($_POST['photoselect'] as $oldDir){
                             $newDir = '../upphotoapproved' . substr($oldDir, 10);
                             rename($oldDir, $newDir);
+                            
                         }
                     }
                 }
