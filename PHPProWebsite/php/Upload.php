@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <title>Vleugels Hogeschool</title>
@@ -11,6 +11,7 @@
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
+            <a href="Upload_en.php"><img id="langflag" src="../Images/engflag.png" alt="ENG"></a>
         </header>
          <div id="navbar">
             <ul>
@@ -22,7 +23,8 @@
         </div>
         <div id ="content">
             <div id="uploadform">
-                <div class="dropdownlogin"><p>Check photos</p>
+                
+                <div class="dropdownlogin"><p>Check fotos</p>
                     <div  class="loginddcontent">
                         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
                             <input type="password" name="password" placeholder="Wachtwoord"><br>
@@ -48,37 +50,32 @@
                     }
                     ?>
                 </div>
-                <h2>Upload jouw eigen foto!</h2>
                 
+                <h2>Upload jouw eigen foto!</h2>
                 <form enctype="multipart/form-data" action="<?php htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
                     <input id= "fileinput" name="userfile" type="file" />
                     <label id="fileinputbutton" for="fileinput">Selecteer een bestand...</label>
                     <input type="submit" name="submit" value="Upload"/>
                 </form>
+                
                 <?php
                 //Check whether or not the file is uploaded, and move it to the uploaded file folder for checking
                 if (isset($_POST["submit"])) {
                     $uploadfile = '../upphoto/' . basename($_FILES['userfile']['name']);
-                
-                
-                    echo '<p>';
                     if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-                        echo "Bestand is geüpload en wacht op validering";
+                        echo "<p>Bestand is geüpload en wacht op validering</p>";
                     } else {
-                        echo "Bestand is niet geüpload, is het een foto?";
+                        echo "<p>Bestand is niet geüpload, is het een foto?</p>";
                     }
-                    echo "</p>";
-                
                 }
                 else{
                     echo '<br/>';
                 }
                 ?>
+                
             </div>
-            <div id="langflagpushphoto"> 
-                <a href="Upload_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
-            </div>
+            
             <div id="photogallery">
                 <?php
                 //For each photo in the approved photo folder, create a html img element with a class
@@ -90,6 +87,7 @@
                 } 
                 ?>
             </div>
+            
         </div>
     </body>
 </html>
