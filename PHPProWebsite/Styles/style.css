@@ -314,7 +314,7 @@ hr {
     height: 40px;
     width: 40px;
     position: relative;
-    bottom: 4px;
+    bottom: 3px;
     
 }
 
@@ -448,9 +448,9 @@ hr {
     font-family: "Garamond", "sans-serif";
     font-size: 18px;
 }
-
 #Contactform h2{
-    text-align: center
+    text-align: center;
+    margin-bottom: 0;
 }
 #Contactform textarea{
     resize: vertical;
