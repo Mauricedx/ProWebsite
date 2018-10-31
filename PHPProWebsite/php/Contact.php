@@ -17,9 +17,6 @@
                 <li><a href="../index.html">Thuispagina</a></li> 
                 <li><a href="https://student.sl-cloud.nl/">Inschrijven</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                       
-                   
-                </li> 
                 <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
