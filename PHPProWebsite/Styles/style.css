@@ -367,7 +367,7 @@ hr {
 #contentCmuzText {
    
 }
-
+/*Contact page elements*/
 #Contactform{
     width: 750px;
     height: 670px;
@@ -403,6 +403,39 @@ hr {
     background-color: #8fbcbb;
 }
 /* Upload page elements*/
+#fileinput{
+    display: none;
+}
+#fileinputbutton{
+    background-color: #B5D3D2;
+    padding: 7px;
+    border: 1px solid;
+}
+#fileinputbutton:active{
+    background-color: #8fbcbb;
+}
+.dropdownlogin{
+    width: 100px;
+    height: 35px;
+    background-color: #B5D3D2;
+    text-align: center;
+    border-radius: 2px;
+    z-index: 1;
+}
+.loginddcontent{
+    display:none;
+    z-index: 1;
+}
+.dropdownlogin:hover .loginddcontent{
+    padding:10px;
+    width: 200px;
+    background-color:#8fbcbb;
+    display: block;
+    line-height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    text-align: left;
+}
 #uploadform{
     background-color: #7bbab8;
     padding: 20px;
@@ -419,6 +452,7 @@ hr {
 #uploadform input[type=submit]{
     background-color: #B5D3D2;
     padding: 7px;
+    padding-bottom: 9px;
     border: 1px solid;
 }
 #uploadform input[type=submit]:active{
@@ -453,6 +487,7 @@ hr {
     text-align: center;
     position: relative;
     left: 450px;
+    border: solid black 1px;
 }
 #photocheckform input[name=delete]{
     background-color: red
