@@ -32,8 +32,8 @@ header p{
     font-size: 18px;
     line-height: 10px;
     position: relative;
-    left: 505px;
-    bottom: 40px;
+    left: 490px;
+    bottom: 50px;
 }
 
 header a{
@@ -304,6 +304,13 @@ hr {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+#signupbtn img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 4px;
+    
+}
 
 #signupbtn a{
     position:relative;
@@ -465,7 +472,6 @@ hr {
     background-color: #B5D3D2;
     text-align: center;
     border-radius: 2px;
-    float: right;
     z-index: 1;
 }
 .loginddcontent{
