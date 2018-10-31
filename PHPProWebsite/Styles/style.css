@@ -32,8 +32,8 @@ header p{
     font-size: 18px;
     line-height: 10px;
     position: relative;
-    left: 505px;
-    bottom: 40px;
+    left: 490px;
+    bottom: 50px;
 }
 
 header a{
@@ -54,6 +54,7 @@ header a{
     height: 100px;
     width: 250px;
 }
+
 /*NAVBAR*/
 #navbar{
     width: 1080px;
@@ -166,7 +167,6 @@ header a{
 	position: relative;
 	background-color:white;
 }
-
 #introductieopleiding{
 	width: 462px;
 	height: 370px;
@@ -279,14 +279,24 @@ hr {
     position:relative;
     left:50px;
     padding-top: 35px;
+    margin-bottom: -70px;
+}
+#indextext{
+    width: 650px;
+    display: inline-block;
 }
 #indextext p{
-    width: 800px;
-    color: #4B766B;
+    width: 600px;
     padding: 25px;
     text-align: justify;
     font-size: 18px;
     margin-bottom: 35px;
+}
+#indeximg{
+    width: 275px;
+    position: relative;
+    top: 100px;
+    left: 70px;
 }
 #signupbtn{
 
@@ -353,6 +363,7 @@ hr {
 }
 #contentInfoWrapper {
     background-color: white;
+    padding-bottom: 50px
 }
 .contentInfo {
     width: 1080px;
@@ -387,11 +398,19 @@ hr {
     float: left;
     text-align: justify;
 }
-.contentInfoText h3,p {
+.contentInfoText h3 {
     margin-top: 15px;
     margin-left: 25px;
 }
 .contentInfoTextLeft h3,p {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.contentInfoText p {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.contentInfoTextLeft p {
     margin-top: 15px;
     margin-right: 10px;
 }
@@ -400,7 +419,7 @@ hr {
     color: #9f1416;
     text-decoration: none;
     position: relative;
-    top: 20px;
+    top: 15px;
 }
 .contentInfoTextLeft a {
     margin-right: 10px;
@@ -458,15 +477,14 @@ hr {
     background-color: #8fbcbb;
 }
 .dropdownlogin{
-    width: 100px;
-    height: 35px;
+    width: 150px;
     position: relative;
     top: 50px;
     right: 50px;
     background-color: #B5D3D2;
     text-align: center;
     border-radius: 2px;
-    float: right;
+    float:left;
     z-index: 1;
 }
 .loginddcontent{
@@ -555,11 +573,24 @@ hr {
     left: 100px;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+#langflagpushabout{
+    position: absolute;
+    left:850px;
+    bottom: 550px;
+}
+// SUBPAGES
+
+=======
+>>>>>>> 4cf7e0b4b93253b574b505ba87abedf7a0cd2fdd
 #opleidingText {
 	width: 500px;
 	height: 700px;
 	float: left;
 	font-family: arial;
+	background-color: green;
+	
 }
 
 #opleidingText h1 {
@@ -572,7 +603,19 @@ hr {
 #opleidingText h2 {
 	font-size: 25px;
 	padding-left: 40px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 	color: #4B766B;
+	font-family: arial;
+	padding-left: 0px;
+}
+
+#opleidingText h3 {
+	font-size: 20px;
+	padding-left: 30px;
+	color: #4B766B;
+	font-family: arial;
+	padding-left: 20px;
 }
 
 #opleidingText p {
@@ -586,6 +629,7 @@ hr {
 	width: 400px;
 	padding-top: 10px;
 	padding-right: 10px;
+	background-color: blue; 	
 }
 
 img.resize {
@@ -599,9 +643,16 @@ img.resize {
 #opleidingInl {
 	width: 500px;
 	height: 240px;
+	
 }
 
 #opleidingOpbouw {
+	float: left;
 	background-color: yellow;
+<<<<<<< HEAD
 	height: 400px;
+=======
+	height: 500px;
+	width: 500px;
+>>>>>>> fec54b0f6ef57915416ef2077063cc52a48bbda8
 }
