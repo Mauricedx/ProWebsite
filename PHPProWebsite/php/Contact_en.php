@@ -25,7 +25,7 @@
         <div id ="content">
             
             <div id="BuiRaRRS">
-                <h3>Actual Weather of the Netherlands</h3>
+                <h3>Actual Weather</h3>
                 <?php
                 /*
                  * Filename   :   Contact.php
@@ -54,6 +54,7 @@
                     <input type="radio" name="occupation" value="interested"> Interested Party
                     <input type="radio" name="occupation" value="teacher"> Teacher
                     <input type="radio" name="occupation" value="other"> Other
+                    <p>Remarks</p>
                     <textarea></textarea><br/>
                     <input type="submit" name="submit" value="Send"/>
                 </form>
