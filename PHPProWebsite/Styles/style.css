@@ -516,6 +516,7 @@ hr {
     left:850px;
     bottom: 550px;
 }
+// SUBPAGES
 
 #opleidingText {
 	width: 500px;
@@ -534,7 +535,19 @@ hr {
 #opleidingText h2 {
 	font-size: 25px;
 	padding-left: 40px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 	color: #4B766B;
+	font-family: arial;
+	padding-left: 0px;
+}
+
+#opleidingText h3 {
+	font-size: 20px;
+	padding-left: 30px;
+	color: #4B766B;
+	font-family: arial;
+	padding-left: 20px;
 }
 
 #opleidingText p {
@@ -566,6 +579,7 @@ img.resize {
 #opleidingOpbouw {
 	background-color: yellow;
 	height: 500px;
+	width: 500px;
 }
 =======	
 >>>>>>> 0e64d9bd72277d1fb131512ae487d9c27b970932
