@@ -13,14 +13,14 @@
             </a>
             <a href="Upload.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
-        <div id="navbar">
-            <ul>
-                <li><a href="../index_en.html">Home</a></li>
-                <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                <li><a href="php/Upload_en.php">Pictures</a></li>
-                <li><a href="php/Contact_en.php">Contact</a></li>
-            </ul>
-        </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="../index_en.html">Homepage</a></li>
+                    <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
+                    <li><a href="Upload_en.php">Pictures</a></li> 
+                    <li><a href="Contact_en.php">Contact</a></li>
+                </ul>
+            </div>
         <div id ="content">
             <div id="uploadform">
                 
