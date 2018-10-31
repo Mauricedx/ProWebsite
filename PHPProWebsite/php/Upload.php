@@ -24,7 +24,7 @@
         <div id ="content">
             <div id="uploadform">
                 
-                <div class="dropdownlogin"><p>Check fotos</p>
+                <div class="dropdownlogin"><p>Check photos</p>
                     <div  class="loginddcontent">
                         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
                             <input type="password" name="password" placeholder="Wachtwoord"><br>

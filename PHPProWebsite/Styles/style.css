@@ -13,6 +13,8 @@ header{
     background-color: white;
 }
 header h1{
+    position: relative;
+    left: 1px;
     text-align: center;
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
@@ -25,11 +27,27 @@ header p{
     font-family: "Garamond", "sans-serif";
     font-size: 18px;
     line-height: 10px;
+    position: relative;
+    left: 125px;
 }
 
 header a{
     text-decoration: none;
     height: 160px;
+}
+#headerlogo{
+    height: 100px;
+    width: 250px;
+    position: relative;
+    left: 128px;
+    top: 20px;
+    float: left;
+}
+#headerlogo a{
+}
+#headerlogo img{
+    height: 100px;
+    width: 250px;
 }
 /*NAVBAR*/
 #navbar{
@@ -308,9 +326,7 @@ hr {
     bottom: 100px;
     right: 10px;
 }
-#langflaglink{
-    
-}
+
 /* Contact page elements*/
 #BuiRaRRS{
     width:260px;
@@ -455,13 +471,11 @@ hr {
 }
 #uploadform input[type=submit]:active{
     background-color: #8fbcbb;
-
 }
 
 #photogallery{
     width: 100%;
     height: 600px;
-    
 }
 .upimg{
     margin-top: 5px;
