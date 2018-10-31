@@ -10,8 +10,10 @@
             <div id="headerlogo">
                 <a href="../index.html"><img src="../Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
             </div>
+            <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
+            </a>
             <a href="Contact_en.php"><img id="langflag" src="../Images/engflag.png" alt="ENG"></a>
         </header>
         <div id="navbar">
@@ -23,6 +25,7 @@
             </ul>
         </div>
         <div id ="content">
+            
             <div id="BuiRaRRS">
                 <h3>Actueel Weer</h3>
                 <?php
@@ -35,6 +38,16 @@
                  */
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
+                ?>
+                <h3>Routebeschrijving</h3>
+                <form id="Form1" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="GET"></form>
+                <form id="Form2" action="<?php echo htmlentities($_SERVER['PHP_SELF']) .'?'.http_build_query($_GET);; ?>" method="POST"></form>
+                <p>Wilt u naar de school of van de school reizen?<p>
+                van: <input type="radio" name="yeet" value="van" checked="checked" form="Form1"><br>
+                naar: <input type="radio" name="yeet" value="naar" form="Form1"><br>
+                <input type="submit" name="button" form="Form1" value="Volgende"><br>
+                <?php
+                include 'RSSFeedRoute.php'
                 ?>
             </div>
             <div id="Contactform">
@@ -59,8 +72,6 @@
                     <input type="submit" name="submit" value="Opsturen"/>
                 </form>
             </div>
-            
-
         </div>
     </body>
 </html>
