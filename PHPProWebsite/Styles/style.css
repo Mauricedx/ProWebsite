@@ -252,11 +252,6 @@ hr {
 	padding-top:30px;
 	text-align:justify;
 }
-#langflagpushopleiding{
-	float:left;
-	padding-left:30px;
-	padding-top:50px;
-}
 #content h2{
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
@@ -305,10 +300,17 @@ hr {
 #pijltje {
     padding-top :7px;
 }
-#langflagpush {
-    padding-left: 50px;
+#langflag {
+    height: 30px;
+    width: 60px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
 }
-
+#langflaglink{
+    
+}
 /* Contact page elements*/
 #BuiRaRRS{
     width:260px;
@@ -324,13 +326,6 @@ hr {
     
 }
 
-#langflagpushcontact {
-    padding-left: 50px;
-    position: relative;
-    top: 460px;
-    left: 190px;
-    float: right;
-}
 #contentHeli {
     
 }
@@ -477,13 +472,6 @@ hr {
     border-radius: 2px;
 }
 
-#langflagpushphoto{
-    float: right;
-    position: relative;
-    bottom: 110px;
-    right: 60px;
-}
-
 #photocheckform input[type=submit]{
     display: inline-block;
     padding: 10px;
@@ -521,9 +509,4 @@ hr {
     position: relative;
     left: 100px;
     margin-bottom: 30px;
-}
-#langflagpushabout{
-    position: absolute;
-    left:850px;
-    bottom: 550px;
 }
