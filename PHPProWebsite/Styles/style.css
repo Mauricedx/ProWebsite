@@ -54,6 +54,7 @@ header a{
     height: 100px;
     width: 250px;
 }
+
 /*NAVBAR*/
 #navbar{
     width: 1080px;
@@ -164,7 +165,6 @@ header a{
     height: 1200px;
     margin: auto;
 }
-
 #introductieopleiding{
 	width: 462px;
 	height: 370px;
@@ -282,6 +282,11 @@ hr {
     position:relative;
     left:50px;
     padding-top: 35px;
+    margin-bottom: -70px;
+}
+#indextext{
+    width: 650px;
+    display: inline-block;
 }
 #indextext p{
     width: 600px;
@@ -290,8 +295,11 @@ hr {
     font-size: 18px;
     margin-bottom: 35px;
 }
-#indextext img{
+#indeximg{
     width: 275px;
+    position: relative;
+    top: 100px;
+    left: 70px;
 }
 #signupbtn{
 
