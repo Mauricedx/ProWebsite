@@ -301,6 +301,13 @@ hr {
     background-color: #DF1C20;
     border-radius: 10px;    
 }
+#signupbtn img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 4px;
+    
+}
 
 #signupbtn a{
     position:relative;
