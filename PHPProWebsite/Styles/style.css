@@ -268,7 +268,7 @@ hr {
 #indextext p{
     width: 800px;
     color: #4B766B;
-    padding: 50px;
+    padding: 25px;
     text-align: justify;
     font-size: 18px;
     margin-bottom: 35px;
@@ -281,7 +281,8 @@ hr {
     left: 50px;
     bottom:30px;    
     background-color: #DF1C20;
-    border-radius: 10px;    
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #signupbtn a{
@@ -331,41 +332,63 @@ hr {
     left: 190px;
     float: right;
 }
-#contentHeli {
-    
+#contentInfoWrapper {
+    background-color: white;
 }
-#contentHeliImg {
-    
+.contentInfo {
+    width: 1080px;
+    height: 200px;
+    margin: auto;   
+    margin-bottom: 10px;
 }
-#contentHeliText {
-    
+.contentInfoImgLeft {
+    width: 324px;
+    height: 200px;
+    margin-left: 50px;
+    background-color: red;
+    float: left;
 }
-#contentEmuz {
-    
+.contentInfoImg {
+    width: 324px;
+    height: 200px;
+    margin-right: 50px;
+    background-color: red;
+    float: left;
 }
-#contentEmuzImg {
-    
+.contentInfoText {
+    width: 648px;
+    height: 200px;
+    float: left;
+    text-align: justify;
 }
-#contentEmuzText {
-    
+.contentInfoTextLeft {
+    width: 648px;
+    height: 200px;
+    margin-left: 50px;
+    float: left;
+    text-align: justify;
 }
-#contentVlieg {
-    
+.contentInfoText h3,p {
+    margin-top: 15px;
+    margin-left: 25px;
 }
-#contentVliegImg {
-    
+.contentInfoTextLeft h3,p {
+    margin-top: 15px;
+    margin-right: 10px;
 }
-#contentVliegText {
-    
+.contentInfoText a {
+    margin-left: 25px;
+    color: #9f1416;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
 }
-#contentCmuz {
-    
-}
-#contentCmuzImg {
-    
-}
-#contentCmuzText {
-   
+.contentInfoTextLeft a {
+    margin-right: 10px;
+    color: #9f1416;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
 }
 /*Contact page elements*/
 #Contactform{
