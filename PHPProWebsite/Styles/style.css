@@ -560,6 +560,17 @@ hr {
     left: 100px;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+#langflagpushabout{
+    position: absolute;
+    left:850px;
+    bottom: 550px;
+}
+// SUBPAGES
+
+=======
+>>>>>>> 4cf7e0b4b93253b574b505ba87abedf7a0cd2fdd
 #opleidingText {
 	width: 500px;
 	height: 700px;
@@ -577,7 +588,19 @@ hr {
 #opleidingText h2 {
 	font-size: 25px;
 	padding-left: 40px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 	color: #4B766B;
+	font-family: arial;
+	padding-left: 0px;
+}
+
+#opleidingText h3 {
+	font-size: 20px;
+	padding-left: 30px;
+	color: #4B766B;
+	font-family: arial;
+	padding-left: 20px;
 }
 
 #opleidingText p {
@@ -609,4 +632,5 @@ img.resize {
 #opleidingOpbouw {
 	background-color: yellow;
 	height: 500px;
+	width: 500px;
 }
