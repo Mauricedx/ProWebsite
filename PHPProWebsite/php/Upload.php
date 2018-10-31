@@ -27,43 +27,43 @@
                 <li><a href="https://student.sl-cloud.nl/">Inschrijven</a></li>
                 <li><a href="../index.html">Welkom bij Vleugels Hogeschool!</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-
                 <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
         <div id ="content">
             <div id="uploadform">
-            <div class="dropdownnav"><p>Check photos</p>
-                <div  class="navddcontent">
-                    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
-                        <input type="password" name="password" placeholder="Wachtwoord"><br>
-                        <input type="submit" name="inlogsubmit" value="Inloggen">
-                    </form>
+                <div class="dropdownlogin"><p>Check photos</p>
+                    <div  class="loginddcontent">
+                        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
+                            <input type="password" name="password" placeholder="Wachtwoord"><br>
+                            <input type="submit" name="inlogsubmit" value="Inloggen">
+                        </form>
+                    </div>
+                    <?php
+                    /*
+                    * Filename   :   Upload.php
+                    * Assignment :   Professional Website Photo Uploader
+                    * Created    :   19-10-2018
+                    * Description:   Professional Website Uploading function and display
+                    * Programmer :  Maurice Hoekstra
+                    */
+                    //Check password on the inlog screen, if it matches, send user to photo checking page
+                    if (isset($_POST["inlogsubmit"])){
+                        if ($_POST["password"] === "wachtwoord"){
+                            header('Location: photocheck.php');
+                        }
+                        else{
+                            echo "<p>Onjuist wachtwoord</p>";
+                        }
+                    }
+                    ?>
                 </div>
-                <?php
-                /*
-                * Filename   :   Upload.php
-                * Assignment :   Professional Website Photo Uploader
-                * Created    :   19-10-2018
-                * Description:   Professional Website Uploading function and display
-                * Programmer :  Maurice Hoekstra
-                */
-                //Check password on the inlog screen, if it matches, send user to photo checking page
-                if (isset($_POST["inlogsubmit"])){
-                    if ($_POST["password"] === "wachtwoord"){
-                        header('Location: photocheck.php');
-                    }
-                    else{
-                        echo "<p>Onjuist wachtwoord</p>";
-                    }
-                }
-                ?>
-            </div>
                 <h2>Upload jouw eigen foto!</h2>
                 
                 <form enctype="multipart/form-data" action="<?php htmlentities($_SERVER['PHP_SELF'])?>" method="POST">
                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
-                    <input name="userfile" type="file" />
+                    <input id= "fileinput" name="userfile" type="file" />
+                    <label id="fileinputbutton" for="fileinput">Selecteer een bestand...</label>
                     <input type="submit" name="submit" value="Upload"/>
                 </form>
                 <?php
