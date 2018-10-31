@@ -7,37 +7,21 @@
     </head>
     <body>
         <header>
+            <div id="headerlogo">
+                <a href="index.html"><img src="Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
+            </div>
             <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
+            <a href="Contact_en.php"><img id="langflag" src="../Images/engflag.png" alt="ENG"></a>
         </header>
         <div id="navbar">
             <ul>
-                <li><a href="../html/Informatie.html">Over</a></li>
-                <li><div class="dropdownnav"><p>Opleidingen</p>
-                        <div  class="navddcontent">
-                            <a href="../html/KlassiekeMuziekInstrumenten.html">Klassieke Intrumentenbouw</a><br/>
-                            <a href="../html/Vliegtuigbouw.html">Vliegtuigbouw</a><br/>
-                            <a href="../html/Helikopterbouw.html">Helikopterbouw</a><br/>
-                            <a href="../html/ElektronischeMuziek.html">Electronische Muziek</a><br/>
-                        </div>
-                    </div>
-                </li>
+                <li><a href="../index.html">Thuispagina</a></li> 
                 <li><a href="https://student.sl-cloud.nl/">Inschrijven</a></li>
-                <li><a href="../index.html">Welkom bij Vleugels Hogeschool!</a></li>
+                <li><a href="Upload.php">Foto's</a></li> 
                 <li><a href="Contact.php">Contact</a></li>
-                <li><div class="dropdownnav"><p>Inloggen</p>
-                        <div  class="navddcontent">
-                            <form action="Contact.php" method="POST">
-                                <input type="text" name="user" placeholder="Gebruikersnaam"><br>
-                                <input type="password" name="password" placeholder="Wachtwoord"><br>
-                                <input type="submit" name="submit" value="Inloggen">
-                            </form>
-                        </div>
-                    </div>
-                </li> 
-                <li><a href="Upload.php">Foto's</a></li>
             </ul>
         </div>
         <div id ="content">
@@ -55,9 +39,6 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
-            </div>
-            <div id="langflagpushcontact"> 
-                <a href="Contact_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 

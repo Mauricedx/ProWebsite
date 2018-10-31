@@ -13,23 +13,46 @@ header{
     background-color: white;
 }
 header h1{
-    text-align: center;
+    width: 383px;
+    height: 150px;
+    position: relative;
+    left: 500px;
+    bottom: 90px;
+    text-align: right;
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
     line-height: 100px;
     font-size: 42px;
 }
 header p{
+    width: 383px;
     text-align: center;
     color: gray;
     font-family: "Garamond", "sans-serif";
     font-size: 18px;
     line-height: 10px;
+    position: relative;
+    left: 505px;
+    bottom: 40px;
 }
 
 header a{
     text-decoration: none;
     height: 160px;
+}
+#headerlogo{
+    height: 100px;
+    width: 250px;
+    position: relative;
+    left: 128px;
+    top: 20px;
+    float: left;
+}
+#headerlogo a{
+}
+#headerlogo img{
+    height: 100px;
+    width: 250px;
 }
 /*NAVBAR*/
 #navbar{
@@ -252,11 +275,6 @@ hr {
 	padding-top:30px;
 	text-align:justify;
 }
-#langflagpushopleiding{
-	float:left;
-	padding-left:30px;
-	padding-top:50px;
-}
 #content h2{
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
@@ -306,8 +324,13 @@ hr {
 #pijltje {
     padding-top :7px;
 }
-#langflagpush {
-    padding-left: 50px;
+#langflag {
+    height: 30px;
+    width: 60px;
+    float: right;
+    position: relative;
+    bottom: 150px;
+    right: 10px;
 }
 
 /* Contact page elements*/
@@ -323,14 +346,6 @@ hr {
 #BuiRaRRS h3{
     margin-left: -100px;
     
-}
-
-#langflagpushcontact {
-    padding-left: 50px;
-    position: relative;
-    top: 460px;
-    left: 190px;
-    float: right;
 }
 #contentInfoWrapper {
     background-color: white;
@@ -433,6 +448,7 @@ hr {
     background-color: #B5D3D2;
     padding: 7px;
     border: 1px solid;
+    margin-left: 50px;
 }
 #fileinputbutton:active{
     background-color: #8fbcbb;
@@ -440,9 +456,13 @@ hr {
 .dropdownlogin{
     width: 100px;
     height: 35px;
+    position: relative;
+    top: 50px;
+    right: 50px;
     background-color: #B5D3D2;
     text-align: center;
     border-radius: 2px;
+    float: right;
     z-index: 1;
 }
 .loginddcontent{
@@ -461,32 +481,28 @@ hr {
 }
 #uploadform{
     background-color: #7bbab8;
-    padding: 20px;
     line-height: 35px;
     font-family: "Garamond", "sans-serif";
 }
-
-#uploadform input[type=file]{
-    background-color: #B5D3D2;
-    padding: 4px;
-    border: 1px solid;
+#uploadform h2{
+    margin-bottom: 10px;
 }
 
 #uploadform input[type=submit]{
     background-color: #B5D3D2;
     padding: 7px;
-    padding-bottom: 9px;
+    padding-top: 8px;
+    padding-bottom: 8.5px;
     border: 1px solid;
+    
 }
 #uploadform input[type=submit]:active{
     background-color: #8fbcbb;
-
 }
 
 #photogallery{
     width: 100%;
     height: 600px;
-    
 }
 .upimg{
     margin-top: 5px;
@@ -495,13 +511,6 @@ hr {
     background-color: #8fbcbb;
     border: 2px solid;
     border-radius: 2px;
-}
-
-#langflagpushphoto{
-    float: right;
-    position: relative;
-    bottom: 110px;
-    right: 60px;
 }
 
 #photocheckform input[type=submit]{
@@ -542,8 +551,53 @@ hr {
     left: 100px;
     margin-bottom: 30px;
 }
-#langflagpushabout{
-    position: absolute;
-    left:850px;
-    bottom: 550px;
+#opleidingText {
+	width: 500px;
+	height: 700px;
+	float: left;
+	font-family: arial;
+}
+
+#opleidingText h1 {
+	font-size: 30px;
+	padding-left: 40px;
+	padding-top: 15px;
+	color: #4B766B;
+}
+
+#opleidingText h2 {
+	font-size: 25px;
+	padding-left: 40px;
+	color: #4B766B;
+}
+
+#opleidingText p {
+	padding-top: 10px;
+	padding-left: 30px;
+	font-size: 16px;
+}
+
+#opleidingImage {
+	float: right;
+	width: 400px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+img.resize {
+	width: 400px;
+	height: fixed;
+	float: right;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#opleidingInl {
+	width: 500px;
+	height: 240px;
+}
+
+#opleidingOpbouw {
+	background-color: yellow;
+	height: 500px;
 }
