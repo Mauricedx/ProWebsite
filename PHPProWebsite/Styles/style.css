@@ -284,12 +284,14 @@ hr {
     padding-top: 35px;
 }
 #indextext p{
-    width: 800px;
-    color: #4B766B;
+    width: 600px;
     padding: 25px;
     text-align: justify;
     font-size: 18px;
     margin-bottom: 35px;
+}
+#indextext img{
+    width: 275px;
 }
 #signupbtn{
 
@@ -356,6 +358,7 @@ hr {
 }
 #contentInfoWrapper {
     background-color: white;
+    padding-bottom: 50px
 }
 .contentInfo {
     width: 1080px;
@@ -403,7 +406,7 @@ hr {
     color: #9f1416;
     text-decoration: none;
     position: relative;
-    top: 20px;
+    top: 15px;
 }
 .contentInfoTextLeft a {
     margin-right: 10px;
