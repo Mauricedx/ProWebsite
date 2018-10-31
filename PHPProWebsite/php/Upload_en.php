@@ -13,8 +13,7 @@
             </a>
             <a href="Upload.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
-        <div id="navbar">
-<<<<<<< HEAD
+            <div id="navbar">
                 <ul>
                     <li><a href="../index_en.html">Homepage</a></li>
                     <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
@@ -22,15 +21,6 @@
                     <li><a href="Contact_en.php">Contact</a></li>
                 </ul>
             </div>
-=======
-            <ul>
-                <li><a href="../index_en.html">Home</a></li>
-                <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                <li><a href="php/Upload_en.php">Pictures</a></li>
-                <li><a href="php/Contact_en.php">Contact</a></li>
-            </ul>
-        </div>
->>>>>>> 198efb08b9ba4364f7d99ba79db75a64e90e0abc
         <div id ="content">
             <div id="uploadform">
                 
