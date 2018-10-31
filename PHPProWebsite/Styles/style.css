@@ -282,7 +282,7 @@ hr {
     position:relative;
     left:50px;
     padding-top: 35px;
-    margin-bottom: -70px;
+    margin-bottom: -130px;
 }
 #indextext{
     width: 650px;
@@ -294,12 +294,13 @@ hr {
     text-align: justify;
     font-size: 18px;
     margin-bottom: 35px;
+    margin-left: 25px;
 }
 #indeximg{
-    width: 275px;
+    width: 345px;
     position: relative;
     top: 100px;
-    left: 70px;
+    left: 25px;
 }
 #signupbtn{
 
@@ -364,9 +365,15 @@ hr {
     margin-left: -100px;
     
 }
+#content hr {
+    width: 975px;
+    margin-left: 50px;
+    color: #4B766B;
+    margin-bottom: 40px;
+}
 #contentInfoWrapper {
     background-color: white;
-    padding-bottom: 50px
+    padding-bottom: 50px;    
 }
 .contentInfo {
     width: 1080px;
@@ -404,10 +411,12 @@ hr {
 .contentInfoText h3 {
     margin-top: 15px;
     margin-left: 25px;
+    color: #4B766B;
 }
-.contentInfoTextLeft h3,p {
+.contentInfoTextLeft h3 {
     margin-top: 15px;
     margin-right: 10px;
+    color: #4B766B;
 }
 .contentInfoText p {
     margin-top: 15px;
@@ -415,7 +424,7 @@ hr {
 }
 .contentInfoTextLeft p {
     margin-top: 15px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 .contentInfoText a {
     margin-left: 25px;
@@ -576,17 +585,6 @@ hr {
     left: 100px;
     margin-bottom: 30px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-#langflagpushabout{
-    position: absolute;
-    left:850px;
-    bottom: 550px;
-}
-// SUBPAGES
-
-=======
->>>>>>> 4cf7e0b4b93253b574b505ba87abedf7a0cd2fdd
 #opleidingText {
 	width: 500px;
 	height: 700px;
