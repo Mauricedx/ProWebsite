@@ -10,10 +10,8 @@
             <div id="headerlogo">
                 <a href="../index_en.html"><img src="../Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
             </div>
-            <a href="../index_en.html">
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
-            </a>
             <a href="Contact.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
          <div id="navbar">
