@@ -584,6 +584,8 @@ hr {
 	height: 700px;
 	float: left;
 	font-family: arial;
+	background-color: green;
+	
 }
 
 #opleidingText h1 {
@@ -622,6 +624,7 @@ hr {
 	width: 400px;
 	padding-top: 10px;
 	padding-right: 10px;
+	background-color: blue; 	
 }
 
 img.resize {
@@ -635,9 +638,11 @@ img.resize {
 #opleidingInl {
 	width: 500px;
 	height: 240px;
+	
 }
 
 #opleidingOpbouw {
+	float: left;
 	background-color: yellow;
 	height: 500px;
 	width: 500px;
