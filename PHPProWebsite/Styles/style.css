@@ -390,7 +390,7 @@ hr {
     float: left;
     text-align: justify;
 }
-.contentInfoText h3,p {
+.contentInfoText h3 {
     margin-top: 15px;
     margin-left: 25px;
 }
@@ -461,14 +461,14 @@ hr {
     background-color: #8fbcbb;
 }
 .dropdownlogin{
-    width: 100px;
-    height: 35px;
+    width: 150px;
     position: relative;
     top: 50px;
     right: 50px;
     background-color: #B5D3D2;
     text-align: center;
     border-radius: 2px;
+    float:left;
     z-index: 1;
 }
 .loginddcontent{
