@@ -7,10 +7,11 @@
     </head>
     <body>
         <header>
-            <a href="../index.html">
+            <div id="headerlogo">
+                <a href="../index_en.html"><img src="../Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
+            </div>
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
-            </a>
             <a href="Upload.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
             <div id="navbar">

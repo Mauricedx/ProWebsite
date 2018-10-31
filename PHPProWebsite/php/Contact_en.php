@@ -7,10 +7,11 @@
     </head>
     <body>
         <header>
-            <a href="../index_en.html">
+            <div id="headerlogo">
+                <a href="../index_en.html"><img src="../Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
+            </div>
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
-            </a>
             <a href="Contact.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
          <div id="navbar">
@@ -44,28 +45,15 @@
                     <p>* required fields</p>
                     <p>Name*</p>
                     <input type="text" name="appname" required/>
-                    <p>Sex</p>
-                    <input type="radio" name="sex" value="male" checked>Male
-                    <input type="radio" name="sex" value="female"> Female
-                    <input type="radio" name="sex" value="other"> Other
                     <p>E-mailadres*</p>
                     <input type="text" name="email" required/>
+                    <p>Student number</p>
+                    <input type="text" name="studentnummer">
                     <p>Profession</p>
                     <input type="radio" name="occupation" value="student" checked> Student
                     <input type="radio" name="occupation" value="interested"> Interested Party
                     <input type="radio" name="occupation" value="teacher"> Teacher
                     <input type="radio" name="occupation" value="other"> Other
-                    <p>Student number</p>
-                    <input type="text" name="studentnummer">
-                    <p>Telephone number</p>
-                    <input type="text" name="telnr"/>
-                    <p>Place</p>
-                    <input type="text" name="place"/>
-                    <p>Zipcode</p>
-                    <input type="text" name="zipcode"/>
-                    <p>House number</p>
-                    <input type="text" name="housenumber"/>
-                    <p>Remark</p>
                     <textarea></textarea><br/>
                     <input type="submit" name="submit" value="Send"/>
                 </form>

@@ -13,23 +13,46 @@ header{
     background-color: white;
 }
 header h1{
-    text-align: center;
+    width: 383px;
+    height: 150px;
+    position: relative;
+    left: 500px;
+    bottom: 90px;
+    text-align: right;
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
     line-height: 100px;
     font-size: 42px;
 }
 header p{
+    width: 383px;
     text-align: center;
     color: gray;
     font-family: "Garamond", "sans-serif";
     font-size: 18px;
     line-height: 10px;
+    position: relative;
+    left: 490px;
+    bottom: 50px;
 }
 
 header a{
     text-decoration: none;
     height: 160px;
+}
+#headerlogo{
+    height: 100px;
+    width: 250px;
+    position: relative;
+    left: 128px;
+    top: 20px;
+    float: left;
+}
+#headerlogo a{
+}
+#headerlogo img{
+    height: 100px;
+    width: 250px;
 }
 /*NAVBAR*/
 #navbar{
@@ -261,12 +284,14 @@ hr {
     padding-top: 35px;
 }
 #indextext p{
-    width: 800px;
-    color: #4B766B;
-    padding: 50px;
+    width: 600px;
+    padding: 25px;
     text-align: justify;
     font-size: 18px;
     margin-bottom: 35px;
+}
+#indextext img{
+    width: 275px;
 }
 #signupbtn{
 
@@ -276,7 +301,15 @@ hr {
     left: 50px;
     bottom:30px;    
     background-color: #DF1C20;
-    border-radius: 10px;    
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#signupbtn img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 4px;
+    
 }
 
 #signupbtn a{
@@ -305,12 +338,10 @@ hr {
     width: 60px;
     float: right;
     position: relative;
-    bottom: 100px;
+    bottom: 150px;
     right: 10px;
 }
-#langflaglink{
-    
-}
+
 /* Contact page elements*/
 #BuiRaRRS{
     width:260px;
@@ -325,42 +356,64 @@ hr {
     margin-left: -100px;
     
 }
-
-#contentHeli {
-    
+#contentInfoWrapper {
+    background-color: white;
+    padding-bottom: 50px
 }
-#contentHeliImg {
-    
+.contentInfo {
+    width: 1080px;
+    height: 200px;
+    margin: auto;   
+    margin-bottom: 10px;
 }
-#contentHeliText {
-    
+.contentInfoImgLeft {
+    width: 324px;
+    height: 200px;
+    margin-left: 50px;
+    background-color: red;
+    float: left;
 }
-#contentEmuz {
-    
+.contentInfoImg {
+    width: 324px;
+    height: 200px;
+    margin-right: 50px;
+    background-color: red;
+    float: left;
 }
-#contentEmuzImg {
-    
+.contentInfoText {
+    width: 648px;
+    height: 200px;
+    float: left;
+    text-align: justify;
 }
-#contentEmuzText {
-    
+.contentInfoTextLeft {
+    width: 648px;
+    height: 200px;
+    margin-left: 50px;
+    float: left;
+    text-align: justify;
 }
-#contentVlieg {
-    
+.contentInfoText h3,p {
+    margin-top: 15px;
+    margin-left: 25px;
 }
-#contentVliegImg {
-    
+.contentInfoTextLeft h3,p {
+    margin-top: 15px;
+    margin-right: 10px;
 }
-#contentVliegText {
-    
+.contentInfoText a {
+    margin-left: 25px;
+    color: #9f1416;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
 }
-#contentCmuz {
-    
-}
-#contentCmuzImg {
-    
-}
-#contentCmuzText {
-   
+.contentInfoTextLeft a {
+    margin-right: 10px;
+    color: #9f1416;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
 }
 /*Contact page elements*/
 #Contactform{
@@ -419,7 +472,6 @@ hr {
     background-color: #B5D3D2;
     text-align: center;
     border-radius: 2px;
-    float: right;
     z-index: 1;
 }
 .loginddcontent{
@@ -455,13 +507,11 @@ hr {
 }
 #uploadform input[type=submit]:active{
     background-color: #8fbcbb;
-
 }
 
 #photogallery{
     width: 100%;
     height: 600px;
-    
 }
 .upimg{
     margin-top: 5px;
@@ -511,6 +561,7 @@ hr {
     margin-bottom: 30px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 #langflagpushabout{
     position: absolute;
     left:850px;
@@ -518,6 +569,8 @@ hr {
 }
 // SUBPAGES
 
+=======
+>>>>>>> 4cf7e0b4b93253b574b505ba87abedf7a0cd2fdd
 #opleidingText {
 	width: 500px;
 	height: 700px;
@@ -581,5 +634,3 @@ img.resize {
 	height: 500px;
 	width: 500px;
 }
-=======	
->>>>>>> 0e64d9bd72277d1fb131512ae487d9c27b970932
