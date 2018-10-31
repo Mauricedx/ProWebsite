@@ -8,7 +8,7 @@
     <body>
         <header>
             <div id="headerlogo">
-                <a href="index.html"><img src="Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
+                <a href="../index.html"><img src="../Images/VleugelsHSLogo.png" alt="VHS Logo"></a>
             </div>
             <a href="../index.html">
             <h1>Vleugels Hogeschool</h1>
