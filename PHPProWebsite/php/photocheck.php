@@ -50,8 +50,7 @@
                             $newDir = '../upphotoapproved' . substr($oldDir, 10);
                             rename($oldDir, $newDir);
                             
-                        }
-                        
+                        }                      
                     }
                 }
                 //If submit button delete is pressed, and the checkbox array is not empty, delete all selected photos
@@ -59,7 +58,9 @@
                     if (isset($_POST['photoselect'])){
                        foreach($_POST['photoselect'] as $photo){
                             unlink($photo);
+                          
                         } 
+                        
                     }
                 }
                 else{

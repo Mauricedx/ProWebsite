@@ -252,11 +252,6 @@ hr {
 	padding-top:30px;
 	text-align:justify;
 }
-#langflagpushopleiding{
-	float:left;
-	padding-left:30px;
-	padding-top:50px;
-}
 #content h2{
     color: #4B766B;
     font-family: "Garamond", "sans-serif";
@@ -305,10 +300,17 @@ hr {
 #pijltje {
     padding-top :7px;
 }
-#langflagpush {
-    padding-left: 50px;
+#langflag {
+    height: 30px;
+    width: 60px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
 }
-
+#langflaglink{
+    
+}
 /* Contact page elements*/
 #BuiRaRRS{
     width:260px;
@@ -324,13 +326,6 @@ hr {
     
 }
 
-#langflagpushcontact {
-    padding-left: 50px;
-    position: relative;
-    top: 460px;
-    left: 190px;
-    float: right;
-}
 #contentHeli {
     
 }
@@ -367,7 +362,7 @@ hr {
 #contentCmuzText {
    
 }
-
+/*Contact page elements*/
 #Contactform{
     width: 750px;
     height: 670px;
@@ -403,23 +398,60 @@ hr {
     background-color: #8fbcbb;
 }
 /* Upload page elements*/
+#fileinput{
+    display: none;
+}
+#fileinputbutton{
+    background-color: #B5D3D2;
+    padding: 7px;
+    border: 1px solid;
+    margin-left: 50px;
+}
+#fileinputbutton:active{
+    background-color: #8fbcbb;
+}
+.dropdownlogin{
+    width: 100px;
+    height: 35px;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    background-color: #B5D3D2;
+    text-align: center;
+    border-radius: 2px;
+    float: right;
+    z-index: 1;
+}
+.loginddcontent{
+    display:none;
+    z-index: 1;
+}
+.dropdownlogin:hover .loginddcontent{
+    padding:10px;
+    width: 200px;
+    background-color:#8fbcbb;
+    display: block;
+    line-height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    text-align: left;
+}
 #uploadform{
     background-color: #7bbab8;
-    padding: 20px;
     line-height: 35px;
     font-family: "Garamond", "sans-serif";
 }
-
-#uploadform input[type=file]{
-    background-color: #B5D3D2;
-    padding: 4px;
-    border: 1px solid;
+#uploadform h2{
+    margin-bottom: 10px;
 }
 
 #uploadform input[type=submit]{
     background-color: #B5D3D2;
     padding: 7px;
+    padding-top: 8px;
+    padding-bottom: 8.5px;
     border: 1px solid;
+    
 }
 #uploadform input[type=submit]:active{
     background-color: #8fbcbb;
@@ -440,19 +472,13 @@ hr {
     border-radius: 2px;
 }
 
-#langflagpushphoto{
-    float: right;
-    position: relative;
-    bottom: 110px;
-    right: 60px;
-}
-
 #photocheckform input[type=submit]{
     display: inline-block;
     padding: 10px;
     text-align: center;
     position: relative;
     left: 450px;
+    border: solid black 1px;
 }
 #photocheckform input[name=delete]{
     background-color: red
@@ -484,6 +510,7 @@ hr {
     left: 100px;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
 #langflagpushabout{
     position: absolute;
     left:850px;
@@ -508,3 +535,5 @@ hr {
 	width: 400px;
 	background-color: yellow
 }
+=======
+>>>>>>> 0e64d9bd72277d1fb131512ae487d9c27b970932

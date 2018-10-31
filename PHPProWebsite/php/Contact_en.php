@@ -11,35 +11,16 @@
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
             </a>
+            <a href="Contact.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
-        <div id="navbar">
-            <ul>
-                <li><a href="../html/Informatie_en.html">About</a></li>
-                <li><div class="dropdownnav"><p>Courses</p>
-                        <div  class="navddcontent">
-                            <a href="../html/KlassiekeMuziekInstrumenten_en.html">Classic Instrument Construction</a><br/>
-                            <a href="../html/Vliegtuigbouw_en.html">Airplane Construction</a><br/>
-                            <a href="../html/Helikopterbouw_en.html">Helicopter Construction</a><br/>
-                            <a href="../html/ElektronischeMuziek_en.html">Electronic Music</a><br/>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                <li><a href="../index_en.html">Welcome to Vleugels University!</a></li>
-                <li><a href="Contact_en.php">Contact</a></li>
-                <li><div class="dropdownnav"><p>Log in</p>
-                        <div  class="navddcontent">
-                            <form action="Contact_en.php" method="POST">
-                                <input type="text" name="user" placeholder="Username"><br>
-                                <input type="password" name="password" placeholder="Password"><br>
-                                <input type="submit" name="submit" value="Log in">
-                            </form>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="Upload_en.php">Pictures</a></li>
-            </ul>
-        </div>
+         <div id="navbar">
+                <ul>
+                    <li><a href="../index_en.html">Homepage</a></li>
+                    <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
+                    <li><a href="Upload_en.php">Pictures</a></li> 
+                    <li><a href="Contact_en.php">Contact</a></li>
+                </ul>
+            </div>
         <div id ="content">
             
             <div id="BuiRaRRS">
@@ -55,9 +36,6 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
-            </div>
-            <div id="langflagpushcontact"> 
-                <a href="Contact.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
