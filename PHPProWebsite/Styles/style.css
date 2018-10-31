@@ -140,14 +140,12 @@ header a{
     width: 1080px;
     height: 1200px;
     margin: auto;
-    background-color: #7bbab8;
 }
 
 #introductieopleiding{
 	width: 462px;
 	height: 370px;
 	margin: 30px;
-	background-color: #B5D3D2;
 	float:left;
 	border: 1px solid #4B766B;
 }
@@ -161,7 +159,6 @@ header a{
 	height:480px;
 	margin-top: 30px;
 	margin-right: 30px;
-	background-color: #B5D3D2;
 	float: right;
 	border: 1px solid #4B766B;
 }
@@ -195,7 +192,6 @@ hr {
 	height: 500px;
 	margin: auto;
 	margin-left: 30px;
-	background-color: #B5D3D2;
 	display: inline-block;
 	float:left;
 	border: 1px solid #4B766B;
@@ -235,7 +231,6 @@ hr {
 	height:550px;
 	margin-top:80px;
 	margin-right:30px;
-	background-color:#B5D3D2;
 	float:right;
 	display: inline-block;
 	border: 1px solid #4B766B;

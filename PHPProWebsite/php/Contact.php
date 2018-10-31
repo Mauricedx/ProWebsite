@@ -67,27 +67,15 @@
                     <p>* verplichte velden</p>
                     <p>Naam*</p>
                     <input type="text" name="appname" required/>
-                    <p>Geslacht</p>
-                    <input type="radio" name="sex" value="male" checked>Man
-                    <input type="radio" name="sex" value="female"> Vrouw
-                    <input type="radio" name="sex" value="other"> Anders
                     <p>E-mailadres*</p>
-                    <input type="text" name="email" required/>
+                    <input type="text" name="email" required/>  
+                    <p>Studentnummer</p>
+                    <input type="text" name="studentnummer">
                     <p>Professie</p>
                     <input type="radio" name="occupation" value="student" checked> Student
                     <input type="radio" name="occupation" value="interested"> Geïntresseerde
                     <input type="radio" name="occupation" value="teacher"> Docent
                     <input type="radio" name="occupation" value="other"> Anders
-                    <p>Studentnummer</p>
-                    <input type="text" name="studentnummer">
-                    <p>Telefoonnummer</p>
-                    <input type="text" name="telnr"/>
-                    <p>Plaats</p>
-                    <input type="text" name="place"/>
-                    <p>Postcode</p>
-                    <input type="text" name="zipcode"/>
-                    <p>Huisnummer</p>
-                    <input type="text" name="housenumber"/>
                     <p>Opmerking</p>
                     <textarea></textarea><br/>
                     <input type="submit" name="submit" value="Opsturen"/>
