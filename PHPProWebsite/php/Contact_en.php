@@ -11,6 +11,7 @@
             <h1>Vleugels University</h1>
             <p>- Music and aerospace construction -</p>
             </a>
+            <a href="Contact.php"><img id="langflag" src="../Images/nlflag.png" alt="NL"></a>
         </header>
         <div id="navbar">
             <ul>
@@ -35,9 +36,6 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
-            </div>
-            <div id="langflagpushcontact"> 
-                <a href="Contact.php"><img src="../Images/nlflag.png" alt="NL" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">

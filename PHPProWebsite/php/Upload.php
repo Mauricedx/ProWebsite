@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <title>Vleugels Hogeschool</title>
@@ -11,6 +11,7 @@
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
+            <a href="Upload_en.php"><img id="langflag" src="../Images/engflag.png" alt="ENG"></a>
         </header>
         <div id="navbar">
             <ul>
@@ -23,7 +24,7 @@
         <div id ="content">
             <div id="uploadform">
                 
-                <div class="dropdownlogin"><p>Check photos</p>
+                <div class="dropdownlogin"><p>Check fotos</p>
                     <div  class="loginddcontent">
                         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
                             <input type="password" name="password" placeholder="Wachtwoord"><br>

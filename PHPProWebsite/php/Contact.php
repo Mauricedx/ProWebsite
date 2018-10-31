@@ -11,6 +11,7 @@
             <h1>Vleugels Hogeschool</h1>
             <p>- Muziek en vliegtuigbouw -</p>
             </a>
+            <a href="Contact_en.php"><img id="langflag" src="../Images/engflag.png" alt="ENG"></a>
         </header>
         <div id="navbar">
             <ul>
@@ -35,9 +36,6 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
-            </div>
-            <div id="langflagpushcontact"> 
-                <a href="Contact_en.php"><img src="../Images/engflag.png" alt="ENG" height="80" width="160"></a>
             </div>
             <div id="Contactform">
                 
