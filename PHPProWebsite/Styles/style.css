@@ -163,6 +163,8 @@ header a{
     width: 1080px;
     height: 1200px;
     margin: auto;
+	position: relative;
+	background-color:white;
 }
 
 #introductieopleiding{
@@ -233,19 +235,14 @@ hr {
 	border-right: 1px solid gray;
 	line-height:112px;
 }
-#tekstopbouw p[id^="Jaar-"]
+#opleidingOpbouw p[id^="Jaar-"]
 {
     display: none;
 }
 
-#tekstopbouw p[id^="Jaar-"]:target
+#opleidingOpbouw p[id^="Jaar-"]:target
 {
     display: inline-block;
-	padding-left: 20px;
-	font-size: 17px;
-	padding-top: 5px;
-	float:right;
-	padding-right:50px;
 	width:250px;
 	
 }
@@ -606,5 +603,5 @@ img.resize {
 
 #opleidingOpbouw {
 	background-color: yellow;
-	height: 500px;
+	height: 400px;
 }
