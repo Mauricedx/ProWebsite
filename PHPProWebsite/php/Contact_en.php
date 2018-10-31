@@ -12,14 +12,14 @@
             <p>- Music and aerospace construction -</p>
             </a>
         </header>
-        <div id="navbar">
-            <ul>
-                <li><a href="../index_en.html">Homepage</a></li>
-                <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                <li><a href="Contact_en.php">Contact</a></li>
-                <li><a href="Upload_en.php">Pictures</a></li>
-            </ul>
-        </div>
+         <div id="navbar">
+                <ul>
+                    <li><a href="../index_en.html">Homepage</a></li>
+                    <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
+                    <li><a href="Upload_en.php">Pictures</a></li> 
+                    <li><a href="Contact_en.php">Contact</a></li>
+                </ul>
+            </div>
         <div id ="content">
             
             <div id="BuiRaRRS">
