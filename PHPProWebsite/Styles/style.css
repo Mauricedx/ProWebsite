@@ -409,6 +409,14 @@ hr {
     margin-top: 15px;
     margin-right: 10px;
 }
+.contentInfoText p {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.contentInfoTextLeft p {
+    margin-top: 15px;
+    margin-right: 10px;
+}
 .contentInfoText a {
     margin-left: 25px;
     color: #9f1416;
