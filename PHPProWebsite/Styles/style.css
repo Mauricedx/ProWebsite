@@ -79,6 +79,9 @@ header a{
 #navbar a{
     color: #4B766B;
     text-decoration: none;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 24px;
+    
 }
 #navbar p{
     color: #4B766B;
@@ -106,6 +109,7 @@ header a{
 }
 #slider {
     overflow: hidden;
+    
 }
 
 @keyframes slider {
@@ -381,6 +385,7 @@ hr {
     height: 200px;
     margin: auto;   
     margin-bottom: 10px;
+    font-family: "Garamond", "sans-serif";
 }
 .contentInfoImgLeft {
     width: 324px;
@@ -388,6 +393,7 @@ hr {
     margin-left: 50px;
     background-color: red;
     float: left;
+
 }
 .contentInfoImg {
     width: 324px;
@@ -401,6 +407,7 @@ hr {
     height: 200px;
     float: left;
     text-align: justify;
+    
 }
 .contentInfoTextLeft {
     width: 648px;
@@ -422,10 +429,18 @@ hr {
 .contentInfoText p {
     margin-top: 15px;
     margin-left: 25px;
+    font-size: 18px;
 }
 .contentInfoTextLeft p {
     margin-top: 15px;
     margin-right: 30px;
+    font-size: 18px;
+}
+.contentInfoText h3{
+    font-size: 24px;
+}
+.contentInfoTextLeft h3{
+    font-size: 24px;
 }
 .contentInfoText a {
     margin-left: 25px;
