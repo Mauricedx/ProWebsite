@@ -37,6 +37,16 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
+                <h3>Routeplanner</h3>
+                <form id="Form1" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="GET"></form>
+                <form id="Form2" action="<?php echo htmlentities($_SERVER['PHP_SELF']) .'?'.http_build_query($_GET);; ?>" method="POST"></form>
+                <p>Do you wish to depart or arrive at the school?<p>
+                depart: <input type="radio" name="yeet" value="van" checked="checked" form="Form1"><br>
+                arrive: <input type="radio" name="yeet" value="naar" form="Form1"><br>
+                <input type="submit" name="button" form="Form1" value="Next"><br>
+                <?php
+                include 'RSSFeedRoute.php'
+                ?>
             </div>
             <div id="Contactform">
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
