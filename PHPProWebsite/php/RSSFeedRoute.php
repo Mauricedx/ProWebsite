@@ -2,12 +2,12 @@
 
 if (isset($_GET['button'])) {
 
-    function yeet() {
-        $destination = $_GET['yeet'];
+    function direction() {
+        $destination = $_GET['direction'];
         return $destination;
     }
 
-    $destination = yeet();
+    $destination = direction();
     if ($destination == "van") {
         echo '<input name="saddr" type="text" maxlength="120" placeholder="Vul hier uw bestemming in..." form="Form2"><br>';
         echo '<input type="submit" name="submit" value="submit" form="Form2">';
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         }
 
         function destination() {
-            $destination = $_GET['yeet'];
+            $destination = $_GET['direction'];
             return $destination;
         }
 
