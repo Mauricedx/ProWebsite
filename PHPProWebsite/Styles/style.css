@@ -4,7 +4,11 @@
 }
 
 body{
+    background-image: url("../Images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #EFEFEF;
+    background-attachment: fixed;
 }
 header{
     width: 1080px;
