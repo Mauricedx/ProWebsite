@@ -43,8 +43,8 @@
                 <form id="Form1" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="GET"></form>
                 <form id="Form2" action="<?php echo htmlentities($_SERVER['PHP_SELF']) .'?'.http_build_query($_GET);; ?>" method="POST"></form>
                 <p>Wilt u naar de school of van de school reizen?<p>
-                van: <input type="radio" name="yeet" value="van" checked="checked" form="Form1"><br>
-                naar: <input type="radio" name="yeet" value="naar" form="Form1"><br>
+                van: <input type="radio" name="direction" value="van" checked="checked" form="Form1"><br>
+                naar: <input type="radio" name="direction" value="naar" form="Form1"><br>
                 <input type="submit" name="button" form="Form1" value="Volgende"><br>
                 <?php
                 include 'RSSFeedRoute.php'
