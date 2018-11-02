@@ -697,16 +697,24 @@ img.resize {
 #opleidingOpbouw {
 	float: left;
 }
-#subimageelek{
-	background-image: url("../Images/elektronische_muziek.jpg");
-	height: 300px;
+.subimage{
+	height:300px;
 	background-size: cover;
-	vertical-align: center;
+	background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
-#subimagevlieg{
+#vliegtuig{
 	background-image: url("../Images/plane.jpg");
-	height: 300px;
-	background-size: cover;
-	vertical-align: center;
+
+}
+#elektronisch{
+	background-image: url("../Images/elektronische_muziek.jpg");
+}
+#helikopter{
+	background-image: url("../Images/helicopter.jpg");
+}
+#klassieke{
+	background-image: url("../Images/instrumentenbouw1.jpg");
 }
 
