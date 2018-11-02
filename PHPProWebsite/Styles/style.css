@@ -170,7 +170,7 @@ header a{
 }
 #contentsub{
     width: 1080px;
-    height: 1200px;
+    height: 1300px;
     margin: auto;
 	position: relative;
 	background-color:white;
@@ -664,7 +664,7 @@ hr {
 	font-size: 25px;
 	padding-left: 30px;
 	padding-top: 10px;
-	color: #4B766B;
+	color: #9f1416;
 	font-family: arial;
 }
 
@@ -696,5 +696,17 @@ img.resize {
 
 #opleidingOpbouw {
 	float: left;
+}
+#subimageelek{
+	background-image: url("../Images/elektronische_muziek.jpg");
+	height: 300px;
+	background-size: cover;
+	vertical-align: center;
+}
+#subimagevlieg{
+	background-image: url("../Images/plane.jpg");
+	height: 300px;
+	background-size: cover;
+	vertical-align: center;
 }
 
