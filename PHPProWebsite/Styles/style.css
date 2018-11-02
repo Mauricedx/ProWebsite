@@ -79,6 +79,9 @@ header a{
 #navbar a{
     color: #4B766B;
     text-decoration: none;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 24px;
+    
 }
 #navbar p{
     color: #4B766B;
@@ -106,6 +109,7 @@ header a{
 }
 #slider {
     overflow: hidden;
+    
 }
 
 @keyframes slider {
@@ -355,13 +359,40 @@ hr {
 /* Contact page elements*/
 #BuiRaRRS{
     width:260px;
+    height:300px;
+    position: relative;
+    right: 20px;
+    float:right;
+    background-color: white;
+    text-align: center;
+}
+#RouteRSS {
+    width:260px;
     height:400px;
+    background-color: white;
     position: relative;
     right: 20px;
     float:right;
     text-align: center;
 }
-
+#RouteRSS input[type=submit] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#RouteRSS input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#RouteRSS input[type=radio] {
+    margin: 5px;
+    margin-top: 10px;
+}
+#RouteRSS input[type=submit]:active{
+    background-color: #8fbcbb;
+}
 #BuiRaRRS h3{
     margin-left: -100px;
     
@@ -381,6 +412,7 @@ hr {
     height: 200px;
     margin: auto;   
     margin-bottom: 10px;
+    font-family: "Garamond", "sans-serif";
 }
 .contentInfoImgLeft {
     width: 324px;
@@ -388,6 +420,7 @@ hr {
     margin-left: 50px;
     background-color: red;
     float: left;
+
 }
 .contentInfoImg {
     width: 324px;
@@ -401,6 +434,7 @@ hr {
     height: 200px;
     float: left;
     text-align: justify;
+    
 }
 .contentInfoTextLeft {
     width: 648px;
@@ -422,10 +456,18 @@ hr {
 .contentInfoText p {
     margin-top: 15px;
     margin-left: 25px;
+    font-size: 18px;
 }
 .contentInfoTextLeft p {
     margin-top: 15px;
     margin-right: 30px;
+    font-size: 18px;
+}
+.contentInfoText h3{
+    font-size: 24px;
+}
+.contentInfoTextLeft h3{
+    font-size: 24px;
 }
 .contentInfoText a {
     margin-left: 25px;
@@ -442,37 +484,57 @@ hr {
     top: 20px;
 }
 /*Contact page elements*/
+#contentCont{
+    width: 1080px;
+    height: 900px;
+    position: relative;
+    margin: auto;
+    background-color: white;
+}
 #Contactform{
-    width: 750px;
+    width: 690px;
     height: 670px;
     line-height: 25px;
     padding: 15px;
+    float:left;
     color: black;
-    background-color: #7bbab8;
+    background-color: white;
     font-family: "Garamond", "sans-serif";
     font-size: 18px;
+    border: solid white 20px;
+}
+#Contactform h3 {
+    color: #4B766B;
 }
 #Contactform h2{
     text-align: center;
     margin-bottom: 0;
 }
-#Contactform textarea{
+#Contactform input[type=submit] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#Contactform input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#Contactform input[type=radio] {
+    margin: 5px;
+    margin-top: 10px;
+}
+#Contactform textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
     resize: vertical;
-    width:400px;
-    border: 1px solid;
-    border-radius: 3px;
 }
-#Contactform input[type=text]{
-    border: 1px solid;
-    border-radius: 3px;
+#Contactform input[type=submit]:active{
+    background-color: #8fbcbb;
 }
-
-#Contactform input[type=submit]{
-    background-color: #B5D3D2;
-    padding: 4px;
-    border: 1px solid;
-}
-
 #Contactform input[type=submit]:active{
     background-color: #8fbcbb;
 }
