@@ -9,11 +9,11 @@ if (isset($_GET['button'])) {
 
     $destination = direction();
     if ($destination == "van") {
-        echo '<input name="saddr" type="text" maxlength="120" placeholder="Vul hier uw bestemming in..." form="Form2"><br>';
-        echo '<input type="submit" name="submit" value="Verzenden" form="Form2">';
+        echo '<input name="saddr" type="text" maxlength="120" placeholder="Put in your final destination here..." form="Form2"><br>';
+        echo '<input type="submit" name="submit" value="Submit" form="Form2">';
     } else {
-        echo '<input name="daddr" type="text" maxlength="120" placeholder="Vul hier uw vertrekpunt in..." form="Form2"><br>';
-        echo '<input type="submit" name="submit" value="Verzenden" form="Form2">';
+        echo '<input name="daddr" type="text" maxlength="120" placeholder="Put in your start destination here..." form="Form2"><br>';
+        echo '<input type="submit" name="submit" value="Submit" form="Form2">';
     }
 }
 if ($_SERVER['REQUEST_METHOD'] === 'POST')

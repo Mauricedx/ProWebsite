@@ -34,7 +34,7 @@
                  * Assignment :   Professional Website Contact page + RSS Feed
                  * Created    :   11-10-2018
                  * Description:   Professional Website Contact page's RSS Feeds
-                 * Programmers :   Maurice Hoekstra
+                 * Programmers :   Maurice Hoekstra & Kevin Trip
                  */
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
