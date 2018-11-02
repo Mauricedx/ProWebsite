@@ -18,10 +18,10 @@
         </header>
         <div id="navbar">
             <ul>
-                <li><a href="../index.html">Thuispagina</a></li> 
-                <li><a href="https://student.sl-cloud.nl/">Inschrijven</a></li>
-                <li><a href="Upload.php">Foto's</a></li> 
-                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="../index_en.html"><b>Homepage</b></a></li>
+                <li><a href="https://student.sl-cloud.nl/"><b>Apply</b></a></li>
+                <li><a href="Upload_en.php"><b>Pictures</b></a></li> 
+                <li><a href="Contact_en.php"><b>Contact</b></a></li>
             </ul>
         </div>
         <div id ="contentCont">
