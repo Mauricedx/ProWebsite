@@ -24,7 +24,7 @@
                 <li><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
-        <div id ="content">
+        <div id ="contentCont">
             
             <div id="BuiRaRRS">
                 <h3>Actueel Weer</h3>
@@ -39,6 +39,31 @@
                 include 'RSSFeed.php';
                 echo rssLoader('https://api.buienradar.nl/data/xml/1.0/rssbuienradar', 1, 2)
                 ?>
+            </div>
+            
+            <div id="Contactform">
+                
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+                    <h2>Contactformulier</h2>
+                    <br/>
+                    <p>* verplichte velden</p>
+                    <h3>Naam*</h3>
+                    <input type="text" name="appname" required/>
+                    <h3>E-mailadres*</h3>
+                    <input type="text" name="email" required/>  
+                    <h3>Studentnummer</h3>
+                    <input type="text" name="studentnummer">
+                    <h3>Professie</h3>
+                    <input type="radio" name="occupation" value="student" checked> Student
+                    <input type="radio" name="occupation" value="interested"> Geïntresseerde
+                    <input type="radio" name="occupation" value="teacher"> Docent
+                    <input type="radio" name="occupation" value="other"> Anders
+                    <h3>Opmerking</h3>
+                    <textarea></textarea><br/>
+                    <input type="submit" name="submit" value="Opsturen"/>
+                </form>
+            </div>
+            <div id="RouteRSS">
                 <h3>Routebeschrijving</h3>
                 <form id="Form1" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="GET"></form>
                 <form id="Form2" action="<?php echo htmlentities($_SERVER['PHP_SELF']) .'?'.http_build_query($_GET);; ?>" method="POST"></form>
@@ -49,28 +74,6 @@
                 <?php
                 include 'RSSFeedRoute.php'
                 ?>
-            </div>
-            <div id="Contactform">
-                
-                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-                    <h2>Contactformulier</h2>
-                    <br/>
-                    <p>* verplichte velden</p>
-                    <p>Naam*</p>
-                    <input type="text" name="appname" required/>
-                    <p>E-mailadres*</p>
-                    <input type="text" name="email" required/>  
-                    <p>Studentnummer</p>
-                    <input type="text" name="studentnummer">
-                    <p>Professie</p>
-                    <input type="radio" name="occupation" value="student" checked> Student
-                    <input type="radio" name="occupation" value="interested"> Geïntresseerde
-                    <input type="radio" name="occupation" value="teacher"> Docent
-                    <input type="radio" name="occupation" value="other"> Anders
-                    <p>Opmerking</p>
-                    <textarea></textarea><br/>
-                    <input type="submit" name="submit" value="Opsturen"/>
-                </form>
             </div>
         </div>
     </body>
