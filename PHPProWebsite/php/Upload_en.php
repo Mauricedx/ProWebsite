@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Vleugels Hogeschool</title>
+        <title>Photo's</title>
         <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
     </head>
     <body>
@@ -16,11 +16,11 @@
         </header>
             <div id="navbar">
                 <ul>
-                    <li><a href="../index_en.html">Homepage</a></li>
-                    <li><a href="https://student.sl-cloud.nl/">Apply</a></li>
-                    <li><a href="Upload_en.php">Pictures</a></li> 
-                    <li><a href="Contact_en.php">Contact</a></li>
-                </ul>
+                <li><a href="../index_en.html"><b>Homepage</b></a></li>
+                <li><a href="https://student.sl-cloud.nl/"><b>Apply</b></a></li>
+                <li><a href="Upload_en.php"><b>Pictures</b></a></li> 
+                <li><a href="Contact_en.php"><b>Contact</b></a></li>
+            </ul>
             </div>
         <div id ="content">
             <div id="uploadform">

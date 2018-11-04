@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
-        <title>Vleugels Hogeschool</title>
+        <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
     </head>
     <body>
@@ -18,9 +18,9 @@
         </header>
         <div id="navbar">
             <ul>
-                <li><a href="../index_en.html"><b>Homepage</b></a></li>
-                <li><a href="https://student.sl-cloud.nl/"><b>Apply</b></a></li>
-                <li><a href="Upload_en.php"><b>Pictures</b></a></li> 
+                <li><a href="../index_en.html"><b>Thuispagina</b></a></li>
+                <li><a href="https://student.sl-cloud.nl/"><b>Inschrijven</b></a></li>
+                <li><a href="Upload_en.php"><b>Foto's</b></a></li> 
                 <li><a href="Contact_en.php"><b>Contact</b></a></li>
             </ul>
         </div>

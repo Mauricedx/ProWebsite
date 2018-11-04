@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Vleugels University</title>
+        <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
     </head>
     <body>
@@ -16,11 +16,11 @@
         </header>
          <div id="navbar">
                 <ul>
-                    <li><a href="../index_en.html"><b>Homepage</b></a></li>
-                    <li><a href="https://student.sl-cloud.nl/"><b>Apply</b></a></li>
-                    <li><a href="Upload_en.php"><b>Pictures</b></a></li> 
-                    <li><a href="Contact_en.php"><b>Contact</b></a></li>
-                </ul>
+                <li><a href="../index_en.html"><b>Homepage</b></a></li>
+                <li><a href="https://student.sl-cloud.nl/"><b>Apply</b></a></li>
+                <li><a href="Upload_en.php"><b>Pictures</b></a></li> 
+                <li><a href="Contact_en.php"><b>Contact</b></a></li>
+            </ul>
             </div>
         <div id ="contentCont">
             <div id="BuiRaRRS">
